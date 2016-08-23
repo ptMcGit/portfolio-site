@@ -1,26 +1,26 @@
 body {
-    color: #e8e2a8;
-    background-color:  #5a4f4d;
+    color: #eadfb0;
+    background-color:  #544b48;
     font-family: courier, monospace, arial, sans-serif;
     font-size: 1em;
     text-align: center
 }
 
 p {
-    color:   #e8e2a8;
+    color:   #eadfb0;
 }
 
 .horizontal-rule {
-    border-top: dotted 2px #fe0;
+    border-top: dotted 2px #fffb00;
 }
 
 #link-name-home {
-    color: #fe0;
+    color: #fffb00;
 }
 
 a {
     text-decoration: none;
-    color: #e8e2a8;
+    color: #eadfb0;
 }
 
 button.link-like-button {
@@ -42,7 +42,7 @@ button.link-like-button {
 
 h1 {
     font-size: 5em;
-    color: #fe0;
+    color: #fffb00;
     font-family: 'Bangers', arial, sans-serif;
     margin-top: 5%;
     margin-bottom: 0;
@@ -53,14 +53,14 @@ h2 {
 }
 
 nav {
-    border-bottom: 2px dotted #fe0;
+    border-bottom: 2px dotted #fffb00;
     margin: 0 10% 0 10%;
     display: inline-table
 
 }
 
 footer {
-    border-top: 2px dotted #fe0;
+    border-top: 2px dotted #fffb00;
     margin: 0 10% 0 10%;
     padding: 2% 10% 10% 10%;
     display: inline-table
@@ -71,7 +71,7 @@ ul#primary-links {
     text-align: center;
     margin: 0;
     padding: 2%;
-    color: #fe0;
+    color: #fffb00;
 }
 
 ul#footer-links {
@@ -81,7 +81,7 @@ ul#footer-links {
     padding: 2%;
     display: inline-table;
     font-family: 'Bangers', arial, sans-serif;
-    color: #fe0;
+    color: #fffb00;
 
 }
 
@@ -99,11 +99,11 @@ ul {
 }
 
 .fa-linkedin-square {
-    color: #0784b7;
+    color: #07a4b7;
 }
 
 .fa-envelope-o {
-    color:    #f15450
+    color: #ec5358;
 }
 
 #fa-envelope-o-button {
@@ -114,11 +114,11 @@ ul {
 }
 
 .fa-github-square {
-    color: #75da1f;
+    color: #91f32d;
 }
 
 .fa-file-text {
-    color: #e8d7ac;
+    color: #eadfb0;
 }
 
 .fa-flickr {
