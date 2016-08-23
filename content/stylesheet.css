@@ -128,3 +128,17 @@ ul {
 .fa-video-camera {
     color: #575b5f;
 }
+
+iframe {
+    border: 3px outset #eadfb0;
+    box-shadow: 8px 8px 15px black;
+}
+
+img {
+    border: 3px outset #eadfb0;
+    box-shadow: 8px 8px 15px black;
+}
+
+.video-box {
+    margin: 7%;
+}
