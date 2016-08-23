@@ -147,10 +147,14 @@ iframe {
 }
 
 img {
-    border: 3px outset #eadfb0;
     box-shadow: 8px 8px 15px black;
+    border-radius: 100%;
 }
 
 .video-box {
+    margin: 7%;
+}
+
+.site-box {
     margin: 7%;
 }
