@@ -34,7 +34,9 @@ button.link-like-button {
 }
 
 #main {
-    margin: 0% 10% 0% 10%;
+    /* margin: 0% 10% 0% 10%; */
+    margin: auto;
+    max-width: 500px;
 }
 
 .sub-header {
