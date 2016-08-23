@@ -16,6 +16,7 @@ p {
 
 #link-name-home {
     color: #fffb00;
+    text-shadow: 2px 2px 2px #1d1d1b;
 }
 
 a {
@@ -100,10 +101,12 @@ ul {
 
 .fa-linkedin-square {
     color: #07a4b7;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-envelope-o {
     color: #ec5358;
+    text-shadow: 2px 2px 2px black;
 }
 
 #fa-envelope-o-button {
@@ -111,22 +114,29 @@ ul {
     border: none;
     outline: transparent;
     cursor: pointer;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-github-square {
     color: #91f32d;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-file-text {
     color: #eadfb0;
+    text-shadow: 2px 2px 2px black;
 }
 
-.fa-flickr {
-    color: #0c0c0b;
+.fa-camera {
+    color: #1f1818;
+    text-shadow: 2px 2px 0px #848484;
 }
+
+
 
 .fa-video-camera {
     color: #575b5f;
+    text-shadow: 2px 2px 2px black;
 }
 
 iframe {
