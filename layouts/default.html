@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio for Zach Hadgraft - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+    <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#footer-links").hide();
+        $("#button-diversion").click(function(){
+          $("#footer-links").show();
+        });
+
+        $("#button-email").click( function(){
+          provideEmail()
+        });
+
+        $("#fa-envelope-o-button").click( function(){
+          provideEmail()
+        });
+
+
+      });
+
+      function provideEmail() {
+        window.alert("zdhadgraft@gmail.com");
+      }
+    </script>
+  </head>
+  <body>
+    <header class="primary-header">
+      <h1><a id='link-name-home' href="/">Zach Hadgraft</a></h1>
+      <div class="sub-header">
+        <p>[<small>Ruby on Rails, Ruby, Bash</small>]</p>
+      </div>
+    </header>
+    <nav id="test">
+      <ul id="primary-links">
+        <li class="link-cell">
+          <a href="https://www.linkedin.com/in/zach-hadgraft" class="fa fa-linkedin-square fa-5x"></a>
+          <p><a href=" https://www.linkedin.com/in/zach-hadgraft "><span>LinkedIn</span></a></p>
+        <li class="link-cell">
+          <a href="/zdh-ironyard-resume-v5.pdf" class="fa fa-file-text fa-5x"></a>
+          <p><a href="/zdh-ironyard-resume-v5.pdf"><span>Resume&#769;</span></a></p>
+        </li>
+        <li class="link-cell">
+          <button class="fa fa-envelope-o fa-5x" id="fa-envelope-o-button"></button>
+          <p><button id="button-email" class="link-like-button"><span>Email</span></button></p>
+        </li>
+        <li class="link-cell">
+          <a href="https://www.github.com/ptmcgit" class="fa fa-github-square fa-5x"></a>
+          <p><a href="https://www.github.com/ptmcgit"><span>GitHub</span></a></p>
+        </li>
+      </ul>
+    </nav>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <footer>
+      &copy; Zach Hadgraft 2016 - <%= Time.now.year %>
+    </footer>
+  </body>
+</html>
