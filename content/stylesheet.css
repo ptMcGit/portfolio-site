@@ -10,6 +10,11 @@ p {
     color:   #eadfb0;
 }
 
+p.prose {
+    text-align: left;
+    text-indent: 3em;
+}
+
 .horizontal-rule {
     border-top: dotted 2px #fffb00;
 }
