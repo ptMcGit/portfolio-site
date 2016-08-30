@@ -45,28 +45,48 @@
         <p>[<small>Ruby on Rails, Ruby, Bash</small>]</p>
       </div>
     </header>
+
     <nav id="test">
       <ul id="primary-links">
         <li class="link-cell">
-          <a href="https://www.linkedin.com/in/zach-hadgraft" class="fa fa-linkedin-square fa-5x"></a>
-          <p><a href=" https://www.linkedin.com/in/zach-hadgraft "><span>LinkedIn</span></a></p>
-        <li class="link-cell">
-          <a href="/img/zdh-resume.pdf" class="fa fa-file-text fa-5x"></a>
-          <p><a href="/img/zdh-resume.pdf"><span>Re&#769;sume&#769;</span></a></p>
+          <div><p>
+            <a href="https://www.linkedin.com/in/zach-hadgraft" class="fa fa-linkedin-square fa-5x"></a>
+          </p></div>
+          <div class="primary-link-text"><p>
+            <a href=" https://www.linkedin.com/in/zach-hadgraft ">LinkedIn</a>
+          </p></div>
         </li>
         <li class="link-cell">
-          <button class="fa fa-envelope-o fa-5x" id="fa-envelope-o-button"></button>
-          <p><button id="button-email" class="link-like-button"><span>Email</span></button></p>
+          <div><p>
+            <a href="/img/zdh-resume.pdf" class="fa fa-file-text fa-5x"></a>
+          </p></div>
+          <div class="primary-link-text"><p>
+              <a href="/img/zdh-resume.pdf">R&#xe9;sum&#xe9;</a>
+          </p></div>
         </li>
         <li class="link-cell">
-          <a href="https://www.github.com/ptmcgit" class="fa fa-github-square fa-5x"></a>
-          <p><a href="https://www.github.com/ptmcgit"><span>GitHub</span></a></p>
+          <div><p>
+            <button class="fa fa-envelope-o fa-5x" id="fa-envelope-o-button"></button>
+          </p></div>
+          <div class="primary-link-text"><p>
+            <button id="button-email" class="link-like-button">Email</button>
+          </p></div>
+        </li>
+        <li class="link-cell">
+          <div><p>
+            <a href="https://www.github.com/ptmcgit" class="fa fa-github-square fa-5x"></a>
+          </p></div>
+          <div class="primary-link-text"><p>
+            <a href="https://www.github.com/ptmcgit">GitHub</a>
+            </p></div>
         </li>
       </ul>
     </nav>
+
     <div id="main">
       <%= yield %>
     </div>
+
     <footer>
       &copy; Zach Hadgraft 2016 - <%= Time.now.year %>
     </footer>

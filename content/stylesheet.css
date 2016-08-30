@@ -10,6 +10,10 @@ p {
     color:   #eadfb0;
 }
 
+.primary-link-text {
+    margin: 5%;
+}
+
 p.prose {
     text-align: left;
     text-indent: 3em;
@@ -63,7 +67,9 @@ h2 {
 nav {
     border-bottom: 2px dotted #fffb00;
     margin: 0 10% 0 10%;
-    display: inline-table
+    padding: 2%;
+    display: inline-table;
+    color:   #eadfb0;
 
 }
 
@@ -71,7 +77,7 @@ footer {
     border-top: 2px dotted #fffb00;
     margin: 0 10% 0 10%;
     padding: 2% 10% 10% 10%;
-    display: inline-table
+    display: inline-table;
 }
 
 ul#primary-links {
@@ -80,6 +86,7 @@ ul#primary-links {
     margin: 0;
     padding: 2%;
     color: #fffb00;
+    display: inline;
 }
 
 ul#footer-links {
@@ -87,7 +94,7 @@ ul#footer-links {
     text-align: center;
     margin: 0;
     padding: 2%;
-    display: inline-table;
+    display: inline;
     font-family: 'Bangers', arial, sans-serif;
     color: #fffb00;
 
