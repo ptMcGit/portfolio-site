@@ -10,6 +10,14 @@ p {
     color:   #eadfb0;
 }
 
+a {
+    text-shadow: 2px 2px 2px black;
+}
+
+button {
+    text-shadow: 2px 2px 2px black;
+}
+
 .primary-link-text {
     margin: 5%;
 }
