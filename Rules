@@ -13,8 +13,9 @@ compile '/**/*.md' do
   layout '/default.*'
 end
 
-compile '*.scss' do
+compile '/**/*.scss' do
   filter :sass, syntax: :scss
+  write item.identifier.without_ext + ".css"
 end
 
 route '/**/*.{html,md}' do
