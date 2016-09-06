@@ -1,0 +1,29 @@
+@mixin button-list {
+    display:            inline;
+    list-style-type:    none;
+    margin:             0;
+    padding:            $default-padding;
+    text-align:         center;
+}
+
+@mixin list-cell {
+    display:    inline-block;
+    margin:     0;
+}
+
+div.button-list {
+    display:    inline-table;
+
+    ul.button-list-items {
+        @include    button-list;
+        color:      $color-2;
+    }
+    li.button-list-cell {
+        @include list-cell;
+    }
+}
+
+ul {
+    list-style-position:    inside;
+    text-align:             left;
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio for Zach Hadgraft - <%= @item[:title] %></title>
-    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
@@ -22,14 +22,9 @@
         });
       /* */
 
-        $("#button-email").click( function(){
+        $(".button-email").click( function(){
           provideEmail()
         });
-
-        $("#fa-envelope-o-button").click( function(){
-          provideEmail()
-        });
-
 
       });
 
@@ -39,14 +34,16 @@
     </script>
   </head>
   <body>
+    <div class="wrapper">
     <header class="primary-header">
       <h1><a id='link-name-home' href="/">Zach Hadgraft</a></h1>
         <p>[<small>Ruby on Rails, Ruby, Bash</small>]</p>
     </header>
 
-    <nav id="test">
-      <ul id="primary-links">
-        <li class="link-cell">
+    <nav>
+      <div class="button-list">
+      <ul class="button-list-items">
+        <li class="button-list-cell">
           <div><p>
             <a href="https://www.linkedin.com/in/zach-hadgraft" class="fa fa-linkedin-square fa-5x"></a>
           </p></div>
@@ -54,7 +51,7 @@
             <a href=" https://www.linkedin.com/in/zach-hadgraft ">LinkedIn</a>
           </p></div>
         </li>
-        <li class="link-cell">
+        <li class="button-list-cell">
           <div><p>
             <a href="/img/zdh-resume.pdf" class="fa fa-file-text fa-5x"></a>
           </p></div>
@@ -62,15 +59,15 @@
               <a href="/img/zdh-resume.pdf">R&#xe9;sum&#xe9;</a>
           </p></div>
         </li>
-        <li class="link-cell">
+        <li class="button-list-cell">
           <div><p>
-            <button class="fa fa-envelope-o fa-5x"></button>
+            <button class="button-email fa fa-envelope-o fa-5x"></button>
           </p></div>
           <div class="primary-link-text"><p>
-            <button id="button-email">Email</button>
+            <button class="button-email button-link">Email</button>
           </p></div>
         </li>
-        <li class="link-cell">
+        <li class="button-list-cell">
           <div><p>
             <a href="https://www.github.com/ptmcgit" class="fa fa-github-square fa-5x"></a>
           </p></div>
@@ -79,6 +76,7 @@
             </p></div>
         </li>
       </ul>
+      </div>
     </nav>
 
     <div id="main">
@@ -88,5 +86,6 @@
     <footer>
       &copy; Zach Hadgraft 2016 - <%= Time.now.year %>
     </footer>
+    </div>
   </body>
 </html>

@@ -13,7 +13,7 @@ compile '/**/*.md' do
   layout '/default.*'
 end
 
-compile '/**/*.scss' do
+compile '/stylesheets/*.scss' do
   filter :sass, syntax: :scss
   write item.identifier.without_ext + ".css"
 end
