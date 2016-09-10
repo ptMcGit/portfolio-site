@@ -13,15 +13,21 @@ p.prose {
 }
 
 div.horizontal-rule {
-    border-top: $border-1
+    border-top: $border-1;
 }
 
 .sub-header {
     padding-bottom: 1%;
 }
 
+@mixin content_box {
+    font-family:        $sans-serif-2;
+    text-shadow:        $text-shadow-1;
+    margin:             7%;
+}
+
 div.video-box {
-    margin: 7%;
+    @include            content_box;
     iframe {
         border:         3px outset $color-1;
         box-shadow:     8px 8px 15px $black;
@@ -29,7 +35,7 @@ div.video-box {
 }
 
 div.site-box {
-    margin: 7%;
+    @include            content_box;
     img {
         box-shadow:     8px 8px 15px $black;
         border-radius:  100%;
