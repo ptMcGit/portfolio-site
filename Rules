@@ -18,6 +18,14 @@ compile '/stylesheets/*.scss' do
   write item.identifier.without_ext + ".css"
 end
 
+route '/views/*.{html,md}' do
+  if item.identifier =~ '/views/index.*'
+    '/index.html'
+  else
+    "/" + item.identifier.without_ext.split("/")[2] + "/index.html"
+  end
+end
+
 route '/**/*.{html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
@@ -25,6 +33,7 @@ route '/**/*.{html,md}' do
     item.identifier.without_ext + '/index.html'
   end
 end
+
 
 compile '/**/*' do
   write item.identifier.to_s
