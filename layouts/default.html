@@ -15,6 +15,7 @@
         <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./js/toggle_diversions.js"></script>
+    <script src="./js/email_modal.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -30,43 +31,63 @@
     <nav>
       <div class="button-list">
       <ul class="button-list-items">
+
         <li class="button-list-cell">
           <div><p>
             <a href="https://www.linkedin.com/in/zach-hadgraft" class="fa fa-linkedin-square fa-4x"></a>
           </p></div>
           <div class="primary-link-text"><p>
-            <a href=" https://www.linkedin.com/in/zach-hadgraft ">LinkedIn</a>
+              LinkedIn
           </p></div>
         </li>
+
         <li class="button-list-cell">
           <div><p>
             <a href="../img/zdh-resume.pdf" class="fa fa-file-text fa-4x"></a>
           </p></div>
-          <div class="primary-link-text"><p>
-              <a href="../img/zdh-resume.pdf">R&#xe9;sum&#xe9;</a>
-          </p></div>
+          <div class="primary-link-text">
+              <p>R&#xe9;sum&#xe9;</p>
+          </div>
         </li>
+
         <li class="button-list-cell">
-          <div><p>
-            <button class="button-email fa fa-envelope-o fa-4x"></button>
-          </p></div>
-          <div class="primary-link-text"><p>
-            <button class="button-email button-link">Email</button>
-          </p></div>
+          <div id="button-email-address">
+            <div><p>
+                <button class="button-email fa fa-envelope-o fa-4x"></button>
+            </p></div>
+            <div class="primary-link-text"><p>
+                Email
+            </p></div>
+          </div>
         </li>
+
         <li class="button-list-cell">
           <div><p>
             <a href="https://www.github.com/ptmcgit" class="fa fa-github-square fa-4x"></a>
           </p></div>
           <div class="primary-link-text"><p>
-            <a href="https://www.github.com/ptmcgit">GitHub</a>
+            GitHub
             </p></div>
         </li>
+
       </ul>
       </div>
     </nav>
 
     <div id="main">
+
+      <div id="email-address-modal" class="modal">
+        <div class="modal-box">
+          <span class="close">&#x2573</span>
+          <div class="modal-content">
+            zdhadgraft@gmail.com
+            <br>
+            <br>
+            <a href="mailto:zdhadgraft@gmail.com">mailto:zdhadgraft@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
       <%= yield %>
     </div>
 

@@ -4,14 +4,6 @@ $(document).ready(function(){
     $("#button-diversion").click(function(){
         $("#footer-links").show();
     });
-    /* */
 
-    $(".button-email").click( function(){
-        provideEmail()
-    });
 
 });
-
-function provideEmail() {
-    window.alert("zdhadgraft@gmail.com");
-}
