@@ -1,4 +1,4 @@
-.modal {
+.modal-outside {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -29,7 +29,7 @@
 }
 
 /* The Close Button */
-.close {
+.modal-close {
     font-family: Arial, san-serif;
     color: #aaaaaa;
     float: right;
@@ -37,8 +37,8 @@
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
