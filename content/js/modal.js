@@ -1,5 +1,92 @@
 window.onload = function() {
 
+    // create the stylesheet
+
+    var styleSheet = (function () {
+
+        var styleEl = document.createElement('style'),
+            styleSheet
+
+        document.head.appendChild(styleEl);
+
+        return styleEl.sheet
+    })()
+
+    // add each style
+
+    var addStyling = function(selector, styleArray) {
+        for (let i = 0; i < styleArray.length; i++) {
+            console.log(styleSheet + selector + "{" + styleArray[i] + "}" + i)
+            styleSheet.insertRule(selector + "{" + styleArray[i] + "}", i)
+        }
+    }
+
+    addStyling(
+        ".modal-outside",
+        [
+            'display:               none',
+            'position:              fixed',
+            'z-index:               1',
+            'padding-top:           100px',
+            'left:                  0',
+            'top:                   0',
+            'width:                 100%',
+            'height:                100%',
+            'overflow:              auto',
+            'background-color:      rgb(0,0,0)',
+            'background-color:      rgba(0,0,0,0.4)'
+        ]
+    )
+
+    addStyling(
+        ".modal-box",
+        [
+            'background-color:       #534c48',
+            'margin:                 auto',
+            'padding:                1%',
+            'border:                 1px solid #888',
+            'width:                  80%',
+            'max-width:              20em',
+            'border-radius:          2px',
+            'border-bottom:          5px solid #606060',
+            'opacity:                .9'
+        ]
+    )
+
+    addStyling(
+        ".modal-content",
+        [
+            'padding:       10%'
+        ]
+    )
+
+    addStyling(
+        ".modal-close",
+        [
+            'font-family:       Arial, san-serif',
+            'color:             #aaaaaa',
+            'float:             right',
+            'font-size:         28px',
+            'font-weight:       bold'
+        ]
+    )
+
+    addStyling(
+        ".modal-close:hover",
+        [
+            'text-decoration:       none',
+            'cursor:                pointer'
+        ]
+    )
+
+    addStyling(
+        ".modal-close:focus",
+        [
+            'text-decoration:       none',
+            'cursor:                pointer'
+        ]
+    )
+
     create_modal = function modal(modal_element, modal_button) {
 
 
