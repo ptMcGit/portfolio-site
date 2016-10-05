@@ -13,6 +13,7 @@
 
 div.button-list {
     display:    inline-table;
+    width:      100%;
 
     ul.button-list-items {
         @include    button-list;
