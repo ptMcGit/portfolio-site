@@ -3,3 +3,6 @@ crash.log
 tmp/
 output/
 TODO
+node_modules/
+npm-debug.log
+package.json
