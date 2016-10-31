@@ -18,6 +18,10 @@ compile '/stylesheets/*.scss' do
   write item.identifier.without_ext + ".css"
 end
 
+route '/robots.txt' do
+  item.identifier
+end
+
 route '/views/*.{html,md}' do
   if item.identifier =~ '/views/index.*'
     '/index.html'
