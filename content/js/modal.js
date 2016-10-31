@@ -15,7 +15,7 @@ window.onload = function() {
     var MODAL_OUTSIDE   = 'modal-outside';
     var MODAL_CONTENT   = 'modal-content';
     var MODAL_BUTTON    = 'modal-button';
-
+    var i;
     // create the stylesheet
 
     var styleSheet = (function () {
@@ -29,9 +29,9 @@ window.onload = function() {
     // add each style
 
     var addStyling = function(selector, styleArray) {
-        for (let i = 0; i < styleArray.length; i++) {
+        for (i = 0; i < styleArray.length; i++) {
             styleSheet.insertRule(selector + "{" + styleArray[i] + "}", i);
-        };
+        }
     };
 
     addStyling(
@@ -90,7 +90,7 @@ window.onload = function() {
             'text-decoration:       none',
             'cursor:                pointer'
         ]
-    )
+    );
 
     addStyling(
         "." + MODAL_CLOSE + ":focus",
@@ -174,7 +174,7 @@ window.onload = function() {
     var content = document.querySelectorAll("[id$='" + MODAL_CONTENT + "']");
     var modalPairs = [];
 
-    for (let i = 0; i < content.length; i++) {
+    for (i = 0; i < content.length; i++) {
         var buttonString = content[i].id.replace(/(.*)(content)$/, '$1' + 'button');
         var button = document.querySelector("[id$='" + buttonString + "']");
         if (button)
@@ -182,12 +182,12 @@ window.onload = function() {
                 content[i],
                 button,
             ]);
-    };
+    }
 
     // create the modals
 
-    for (let i = 0; i < modalPairs.length; i++) {
+    for (i = 0; i < modalPairs.length; i++) {
         create_modal(modalPairs[i][0],modalPairs[i][1]);
-    };
+    }
 
 };
