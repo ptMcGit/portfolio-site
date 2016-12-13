@@ -1,5 +1,4 @@
-window.onload = function() {
-
+(function () {
     // each modal consists of exactly
     //      - 1 button
     //      - 1 div
@@ -191,4 +190,4 @@ window.onload = function() {
         create_modal(modalPairs[i][0],modalPairs[i][1]);
     }
 
-};
+})();
