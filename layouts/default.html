@@ -143,6 +143,7 @@
         <h2><a href="#diversions">Diversions</a></h2>
         <!-- <div class="horizontal-rule"></div> -->
 
+        <!-- <h2>Diversions</h2> -->
 
 
 
@@ -221,6 +222,52 @@
 
         </div>
     </section>
+
+    <section id="diversions">
+      <div class="wrapper">
+        <h2>Diversions</h2>
+        <div class="button-list">
+          <ul id="footer-links" class="button-list-items">
+            <li class="button-list-cell">
+              <a href="https://www.flickr.com/photos/71142284568111622/" class="fa fa-camera fa-5x"></a>
+              <p><a href="https://www.flickr.com/photos/71142284568111622/"><span>Photos</span></a></p>
+            </li>
+
+            <li class="button-list-cell">
+              <div><p>
+                  <button id="video-modal-button" class="button-link fa fa-video-camera fa-5x"></button>
+              </p></div>
+              <div class="primary-link-text"><p>
+                  Videos
+              </p></div>
+            </li>
+          </ul>
+
+
+          <div id="video-modal-content">
+            <div class="video-box">
+              <iframe width="420" height="315" id="video-iframe"
+                      src="https://www.youtube.com/embed/u4oHrng4B3Y">
+              </iframe>
+            </div>
+
+            <p id="video-description">
+              Video Description
+            </p>
+
+            <p id="tech-description">
+              Technical Description
+            </p>
+
+            <button id="video-prev-button" class="button-link fa fa-arrow-left fa-4x"></button>
+            <button id="video-next-button" class="button-link fa fa-arrow-right fa-4x"></button>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
     <footer>
       &copy; Zach Hadgraft 2016 - <%= Time.now.year %>
     </footer>
