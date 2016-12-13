@@ -4,11 +4,11 @@ window.onload = function() {
     //      - 1 button
     //      - 1 div
 
-    // name the button with a suffix ending in '-button-modal'
-    // name the div with a suffix prefix ending in '-content-modal'
+    // name the button with a suffix ending in '-modal-button'
+    // name the div with a suffix prefix ending in '-modal-content'
     // use the same prefix for the div and button
 
-    // e.g. "email-address-button-modal" and "email-address-content-modal"
+    // e.g. "email-address-modal-button" and "email-address-modal-content"
 
     var MODAL_BOX       = 'modal-box';
     var MODAL_CLOSE     = 'modal-close';
@@ -16,6 +16,7 @@ window.onload = function() {
     var MODAL_CONTENT   = 'modal-content';
     var MODAL_BUTTON    = 'modal-button';
     var i;
+
     // create the stylesheet
 
     var styleSheet = (function () {
