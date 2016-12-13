@@ -41,7 +41,7 @@ window.onload = function() {
             'display:               none',
             'position:              fixed',
             'z-index:               1',
-            'padding-top:           100px',
+            'padding-top:           1%',
             'left:                  0',
             'top:                   0',
             'width:                 100%',
