@@ -148,80 +148,58 @@
 
 
 
-      </div>
     </div>
-
+    </div>
     <section id="sites">
       <div class="wrapper">
         <h2>Sites</h2>
+
         <div class="site-box">
-          <a href="https://reddit-clone456.herokuapp.com/">
-            <img src="../img/nrooms_ss.png" height="200px" width="200px" alt="N Rooms"><img>
+
+                  <button id="site-slideshow-prev-button"
+                class="button-link fa fa-chevron-left fa-4x">
+        </button>
+
+
+
+          <a id="site-slideshow-site_url"
+             href="https://reddit-clone456.herokuapp.com/">
+            <img id="site-slideshow-img_url"
+                 alt="N Rooms Site Screenshot"
+                 src="../img/nrooms_ss.png"
+                 height="200px" width="200px" alt="N Rooms">
           </a>
 
+        <button id="site-slideshow-next-button"
+                class="button-link fa fa-chevron-right fa-4x"
+                >
+        </button>
+
           <p>
-            <a href="https://github.com/ptMcGit/reddit_clone" class="code-link">
+            <a id="site-slideshow-code_url"
+               href="https://github.com/ptMcGit/reddit_clone" class="code-link">
               &lt;code&gt;
             </a>
           </p>
-
-          <p>A social media platform with reddit-like features.</p>
-          <p>(Ruby on Rails, heroku)</p>
-
-          <ul>
-            <li>front-end development: Bootstrap, jQuery</li>
-            <li>back-end development: PostgreSQL, devise, pundit, RSpec, Capybara</li>
-          </ul>
-        </div>
-
-        <div class="horizontal-rule"></div>
-
-        <div class="site-box">
-          <a href="https://bubble-a6b08.firebaseapp.com/#/home">
-            <img src="../img/pearl_ss.png" height="200px" width="200px" alt="Pearl"><img>
-          </a>
-
-          <p>
-            <a href="https://github.com/TIY-LiveLocal/Pearl" class="code-link">
-              &lt;code&gt;
-            </a>
-          </p>
-
-          <p>A web application that connects users with local businesses.</p>
-          <p>(Ruby on Rails, heroku, Firebase)</p>
-
-          <ul>
-            <li>basic CRUD and RSpec testing</li>
-            <li>Sidekiq workers with Redis for RESTful calls to Locu, Yelp, and Google Places APIs</li>
-            <li>Basic authentication solution</li>
-          </ul>
 
           <div class="horizontal-rule"></div>
 
-          <div class="site-box">
-            <a href="https://github.com/ptMcGit/portfolio-site">
-              <img src="../img/this_site_ss.png" height="200px" width="200px" alt="Pearl"><img>
-            </a>
+          <p id="site-slideshow-short_desc">
+            A social media platform with reddit-like features.
+          </p>
 
-            <p>
-              <a href="https://github.com/ptMcGit/portfolio-site" class="code-link">
-                &lt;code&gt;
-              </a>
-            </p>
+          <p id="site-slideshow-tech_desc">
+            (Ruby on Rails, heroku)
+          </p>
 
-            <p>The code for this site.</p>
-
-            <p>(nanoc)</p>
-
-            <ul>
-              <li>jQuery, Font-Awesome, SCSS</li>
-            </ul>
-
-
-          </div>
-
+          <p id="site-slideshow-work_desc">
+            front-end development: Bootstrap, jQuery</br>
+            back-end development: PostgreSQL, devise, pundit, RSpec, Capybara
+          </p>
 
         </div>
+
+      </div>
     </section>
 
     <section id="diversions">
@@ -245,7 +223,7 @@
           </ul>
 
 
-          <div id="video-modal-content">
+<!--          <div id="video-modal-content"> -->
 
             <p class="video-slideshow-title"
               id="video-slideshow-title">
@@ -275,7 +253,7 @@
                     class="button-link fa fa-arrow-right fa-4x">
             </button>
 
-          </div>
+<!--          </div> -->
 
 
       </div>
