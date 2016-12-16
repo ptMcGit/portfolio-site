@@ -59,7 +59,7 @@
             'padding:                1%',
             'border:                 1px solid #888',
             'width:                  80%',
-            'max-width:              500px',
+            'max-width:              800px',
             'border-radius:          2px',
             'border-bottom:          5px solid #606060',
             'opacity:                .9'

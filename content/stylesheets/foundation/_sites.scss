@@ -27,6 +27,12 @@ section {
     clear:          both;
     padding-top:    3em;
     overflow:       auto;
+    h2 {
+        color:          $color-1;
+        font-family:    $sans-serif;
+        text-shadow:    $text-shadow-1;
+        font-size:      3.5em;
+    }
 }
 
 section#sites {
@@ -34,7 +40,7 @@ section#sites {
 }
 
 section#diversions {
-    background: #a77;
+    background: $background-1;
 }
 
 footer {
@@ -46,4 +52,5 @@ footer {
 #main {
     margin:         $default-margin;
     padding:        $default-padding;
+    height:         100vh;
 }
