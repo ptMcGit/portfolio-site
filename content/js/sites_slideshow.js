@@ -50,41 +50,41 @@
 
     var siteCollection = new SlideShow(sites);
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         document.getElementById("site-slideshow-site_url")
-            .href = that.site_url;
+            .href = this.site_url;
     });
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         var i = document.getElementById("site-slideshow-img_url");
-        i.src = that.img_url;
-        i.alt = that.alt_text;
+        i.src = this.img_url;
+        i.alt = this.alt_text;
     });
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         document.getElementById("site-slideshow-code_url")
-            .href = that.code_url;
-        //.setAttribute("href", that.code_url);
+            .href = this.code_url;
+        //.setAttribute("href", this.code_url);
     });
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         document.getElementById("site-slideshow-short_desc")
-            .innerHTML = that.short_desc;
+            .innerHTML = this.short_desc;
     });
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         document.getElementById("site-slideshow-tech_desc")
-            .innerHTML = that.tech_desc;
+            .innerHTML = this.tech_desc;
     });
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         document.getElementById("site-slideshow-work_desc")
-            .innerHTML = that.work_desc;
+            .innerHTML = this.work_desc;
     });
 
-    siteCollection.bindElement(function(that) {
+    siteCollection.bindElement(function() {
         document.getElementById("sites")
-            .style.backgroundColor = that.background;
+            .style.backgroundColor = this.background;
     });
 
     // associate html elements with events

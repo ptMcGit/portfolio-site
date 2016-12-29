@@ -57,7 +57,7 @@ function SlideShow(objectArray) {
         var f;
         for(f = 0; f < this.elementBindings.length; f++)
             // insert loadSlide logic here e.g. visible
-            this.elementBindings[f](this.self);
+            this.elementBindings[f].apply(this.self);
         // loadSlide invisible
     };
 

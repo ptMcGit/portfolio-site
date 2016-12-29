@@ -62,27 +62,27 @@
     // associate object data with html elements
 
     // title
-    videoCollection.bindElement(function(that) {
+    videoCollection.bindElement(function() {
         document.getElementById("video-slideshow-title")
-            .innerHTML = that.title;
+            .innerHTML = this.title;
     });
 
     // url
-    videoCollection.bindElement(function(that) {
+    videoCollection.bindElement(function() {
         document.getElementById("video-slideshow-iframe")
-            .setAttribute("src", that.url);
+            .setAttribute("src", this.url);
     });
 
     // description
-    videoCollection.bindElement(function(that) {
+    videoCollection.bindElement(function() {
         document.getElementById("video-slideshow-description")
-            .innerHTML = that.description;
+            .innerHTML = this.description;
     });
 
     // technical description
-    videoCollection.bindElement(function(that) {
+    videoCollection.bindElement(function() {
         document.getElementById("video-slideshow-tech-description")
-            .innerHTML = that.tech_description;
+            .innerHTML = this.tech_description;
     });
 
     // associate html elements with events

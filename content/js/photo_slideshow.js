@@ -47,9 +47,10 @@
 
     var photoCollection = new SlideShow(randomPhotos);
 
-    photoCollection.bindElement(function(that) {
+    photoCollection.bindElement(function() {
         document.getElementById("photo-slideshow-url")
-            .src = that.url;
+            .src = this.url;
+
     });
 
     photoCollection.bindPrevEvent(
