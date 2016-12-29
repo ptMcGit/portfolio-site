@@ -27,7 +27,25 @@
         {url: "https://c5.staticflickr.com/1/373/31397299612_80b2d3338c.jpg"}
     ];
 
-    var photoCollection = new SlideShow(photos);
+    // randomly seed photos
+
+    // random number from 0 to max; excluding max
+    var randnum = function(max) {
+        var min = Math.ceil(0);
+        var max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    var i;
+    var randomPhotos = [];
+    var randomI;
+    for(i = 0; i < photos.length + randomPhotos.length; i++) {
+        randomI = randnum(photos.length);
+        randomPhotos.push(photos[randomI]);
+        photos.splice(randomI,1);
+    }
+
+    var photoCollection = new SlideShow(randomPhotos);
 
     photoCollection.bindElement(function(that) {
         document.getElementById("photo-slideshow-url")
@@ -44,11 +62,6 @@
         "click"
     );
 
-    var randnum = (function() {
-            var min = Math.ceil(0);
-            var max = Math.floor(photos.length);
-            return Math.floor(Math.random() * (max - min)) + min;
-    }());
-    photoCollection.setSlide(randnum);
+    photoCollection.setSlide(0);
 
 })();
