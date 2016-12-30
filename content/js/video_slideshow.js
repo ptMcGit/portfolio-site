@@ -2,8 +2,6 @@
 
     // Video Collection Data
 
-    //console.log("hello from videos.");
-
     var merry_medley={
         title:              "Merry Medley",
         url:                "https://www.youtube.com/embed/WHrfZEMJyG8",
@@ -55,35 +53,37 @@
         lazer_tag
     ];
 
-    // create new collection
-
     var videoCollection = new SlideShow(videos);
 
     // associate object data with html elements
 
     // title
-    videoCollection.bindElement(function() {
-        document.getElementById("video-slideshow-title")
-            .innerHTML = this.title;
-    });
+    videoCollection.bindElement(
+        [document.getElementById("video-slideshow-title")],
+        'innerHTML',
+        'title'
+    );
 
     // url
-    videoCollection.bindElement(function() {
-        document.getElementById("video-slideshow-iframe")
-            .setAttribute("src", this.url);
-    });
+    videoCollection.bindElement(
+        [document.getElementById("video-slideshow-iframe")],
+        'src',
+        'url'
+    );
 
     // description
-    videoCollection.bindElement(function() {
-        document.getElementById("video-slideshow-description")
-            .innerHTML = this.description;
-    });
+    videoCollection.bindElement(
+        [document.getElementById("video-slideshow-description")],
+        'innerHTML',
+        'description'
+    );
 
     // technical description
-    videoCollection.bindElement(function() {
-        document.getElementById("video-slideshow-tech-description")
-            .innerHTML = this.tech_description;
-    });
+    videoCollection.bindElement(
+        [document.getElementById("video-slideshow-tech-description")],
+        'innerHTML',
+        'tech_description'
+    );
 
     // associate html elements with events
 
@@ -103,5 +103,3 @@
     videoCollection.setSlide(0);
 
 })();
-
-//console.log("zebra2");

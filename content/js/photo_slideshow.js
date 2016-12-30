@@ -34,7 +34,7 @@
         var min = Math.ceil(0);
         var max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
-    }
+    };
 
     var i;
     var randomPhotos = [];
@@ -47,11 +47,11 @@
 
     var photoCollection = new SlideShow(randomPhotos);
 
-    photoCollection.bindElement(function() {
-        document.getElementById("photo-slideshow-url")
-            .src = this.url;
-
-    });
+    photoCollection.bindElement(
+        [document.getElementById("photo-slideshow-url")],
+        'src',
+        'url'
+    );
 
     photoCollection.bindPrevEvent(
         document.getElementById("photo-slideshow-prev-button"),

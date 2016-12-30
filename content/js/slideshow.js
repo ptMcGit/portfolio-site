@@ -45,7 +45,7 @@ function SlideShow(objectArray) {
     }).apply(this);
 
     this.updateElements = (function(){
-        var that = this
+        var that = this;
         return function() {
             if(this.elementBindings.length === 0) return;
             var f;
@@ -56,8 +56,11 @@ function SlideShow(objectArray) {
 
 }
 
-SlideShow.prototype.bindElement = function(func) {
-    this.elementBindings[this.elementBindings.length] = func;
+SlideShow.prototype.bindElement = function(elementArray, property, attribute) {
+    this.elementBindings[this.elementBindings.length] = function(){
+        for(var i in elementArray)
+            elementArray[i][property] = this[attribute];
+    };
 };
 
 SlideShow.prototype.bindNextEvent = function(element, event) {

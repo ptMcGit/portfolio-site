@@ -50,42 +50,53 @@
 
     var siteCollection = new SlideShow(sites);
 
-    siteCollection.bindElement(function() {
-        document.getElementById("site-slideshow-site_url")
-            .href = this.site_url;
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-site_url")],
+        'href',
+        'site_url'
+    );
 
-    siteCollection.bindElement(function() {
-        var i = document.getElementById("site-slideshow-img_url");
-        i.src = this.img_url;
-        i.alt = this.alt_text;
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-img_url")],
+        'src',
+        'img_url'
+    );
 
-    siteCollection.bindElement(function() {
-        document.getElementById("site-slideshow-code_url")
-            .href = this.code_url;
-        //.setAttribute("href", this.code_url);
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-img_url")],
+        'alt',
+        'alt_text'
+    );
 
-    siteCollection.bindElement(function() {
-        document.getElementById("site-slideshow-short_desc")
-            .innerHTML = this.short_desc;
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-code_url")],
+        'href',
+        'code_url'
+    );
 
-    siteCollection.bindElement(function() {
-        document.getElementById("site-slideshow-tech_desc")
-            .innerHTML = this.tech_desc;
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-short_desc")],
+        'innerHTML',
+        'short_desc'
+    );
 
-    siteCollection.bindElement(function() {
-        document.getElementById("site-slideshow-work_desc")
-            .innerHTML = this.work_desc;
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-tech_desc")],
+        'innerHTML',
+        'tech_desc'
+    );
 
-    siteCollection.bindElement(function() {
-        document.getElementById("sites")
-            .style.backgroundColor = this.background;
-    });
+    siteCollection.bindElement(
+        [document.getElementById("site-slideshow-work_desc")],
+        'innerHTML',
+        'work_desc'
+    );
+
+    siteCollection.bindElement(
+        [document.getElementById("sites").style],
+        'background',
+        'background'
+    );
 
     // associate html elements with events
 
