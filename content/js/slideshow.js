@@ -23,55 +23,53 @@
 //    - this can also be used to manipulate the slideshow index directly
 
 function SlideShow(objectArray) {
-    //console.log("aardvark");
-    this.slides = objectArray;
-    this.self = this;
-    this.slideIndex = 0;
+
     this.elementBindings = [];
 
     this.setProto = function(p) {
-        //this.__proto__ = p;
         Object.setPrototypeOf(this, p);
         this.updateElements();
     };
 
-    this.setSlide = (function(self) {
-        //console.log(self);
+    this.setSlide = (function() {
+        var slides = objectArray;
+        var slideIndex = 0;
+
         return function(val) {
-            //console.log("setSlide hey: " + self.slides);
-            self.slideIndex += val;
-            if (self.slideIndex < 0) self.slideIndex = (self.slides.length - 1);
-            if (self.slideIndex == self.slides.length) self.slideIndex = 0;
-            self.setProto(self.slides[self.slideIndex]);
+            slideIndex += val;
+            if (slideIndex < 0) slideIndex = (slides.length - 1);
+            if (slideIndex == slides.length) slideIndex = 0;
+            this.setProto(slides[slideIndex]);
+        }.bind(this);
 
+    }).apply(this);
+
+    this.updateElements = (function(){
+        var that = this
+        return function() {
+            if(this.elementBindings.length === 0) return;
+            var f;
+            for(f = 0; f < this.elementBindings.length; f++)
+                this.elementBindings[f].apply(that);
         };
-    })(this.self);
-
-    this.bindElement = function(func) {
-        this.elementBindings[this.elementBindings.length] = func;
-    };
-
-    this.updateElements = function() {
-        //console.log("jackrabbit");
-        if(this.elementBindings.length === 0) return;
-        var f;
-        for(f = 0; f < this.elementBindings.length; f++)
-            // insert loadSlide logic here e.g. visible
-            this.elementBindings[f].apply(this.self);
-        // loadSlide invisible
-    };
-
-    this.bindNextEvent = function(element, event) {
-        //console.log("this is " + this.url);
-        var f = this.setSlide;
-        element.addEventListener(event, function() { f(1); }, false);
-    };
-
-    this.bindPrevEvent = function(element, event) {
-        //console.log("this is " + this.url);
-        var f = this.setSlide;
-        element.addEventListener(event, function() { f(-1); }, false);
-    };
-    //console.log("kangaroo");
+    }.bind(this))();
 
 }
+
+SlideShow.prototype.bindElement = function(func) {
+    this.elementBindings[this.elementBindings.length] = func;
+};
+
+SlideShow.prototype.bindNextEvent = function(element, event) {
+    element.addEventListener(
+        event,
+        function() { this.setSlide(1); }.bind(this),
+        false);
+};
+
+SlideShow.prototype.bindPrevEvent = function(element, event){
+    element.addEventListener(
+        event,
+        function() { this.setSlide(-1); }.bind(this),
+        false);
+};
