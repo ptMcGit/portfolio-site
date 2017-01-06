@@ -8,10 +8,10 @@ end
 # using the :kramdown filter. It is commented out by default, because kramdown
 # is not bundled with Nanoc or Ruby.
 #
-compile '/**/*.md' do
-  filter :kramdown
-  layout '/default.*'
-end
+# compile '/**/*.md' do
+#   filter :kramdown
+#   layout '/default.*'
+# end
 
 compile '/stylesheets/*.scss' do
   filter :sass, syntax: :scss
@@ -38,6 +38,11 @@ route '/**/*.{html,md}' do
   end
 end
 
+compile '/js/**/*' do
+  if File.basename(item.identifier) == 'bundle.js'
+    write item.identifier.to_s
+  end
+end
 
 compile '/**/*' do
   write item.identifier.to_s
