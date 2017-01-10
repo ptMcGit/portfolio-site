@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "multi-slideshow": "ptMcGit/multi-slideshow"
+    },
+    "scripts": {
+        "build": "webpack"
+    }
+}
