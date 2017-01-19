@@ -1,0 +1,33 @@
+#video-modal-outside {
+    background-color: rgba(0,0,0,.4);
+}
+
+#video {
+    padding: 0;
+    opacity: none;
+    div.video-box {
+        text-align:         center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        #video-slideshow-iframe {
+            border:         3px outset $color-1;
+            box-shadow:     8px 8px 15px $black;
+            display: inline-block;
+            float: left;
+        }
+        #video-slideshow-prev-button{
+            display: inline-block;
+            float: left;
+        }
+        #video-slideshow-next-button{
+            display: inline-block;
+            float: left;
+        }
+    }
+}
+
+#video-modal-box {
+    background-color: transparent;
+    border: inherit;
+}
