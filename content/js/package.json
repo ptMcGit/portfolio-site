@@ -1,6 +1,7 @@
 {
     "dependencies": {
-        "multi-slideshow": "ptMcGit/multi-slideshow"
+        "multi-slideshow": "ptMcGit/multi-slideshow",
+        "easymodal": "ptMcGit/easymodal"
     },
     "scripts": {
         "build": "webpack"
