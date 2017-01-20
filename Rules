@@ -1,52 +1,41 @@
 #!/usr/bin/env ruby
 
-compile '/**/*.html' do
-  layout '/default.*'
+route '/robots.txt' do
+  item.identifier
 end
 
-# This is an example rule that matches Markdown (.md) files, and filters them
-# using the :kramdown filter. It is commented out by default, because kramdown
-# is not bundled with Nanoc or Ruby.
-#
-# compile '/**/*.md' do
-#   filter :kramdown
-#   layout '/default.*'
-# end
+compile '/robots.txt' do
+  write item.identifier.to_s
+end
 
-compile '/stylesheets/*.scss' do
+compile '/index.html' do
+  layout '/default.html'
+end
+
+route '/index.html' do
+  '/index.html'
+end
+
+compile '/js/bundle.js' do
+  write item.identifier.to_s
+end
+
+compile '/stylesheets/main.scss' do
   filter :sass, syntax: :scss
   filter :rainpress
   write item.identifier.without_ext + ".css"
 end
 
-route '/robots.txt' do
-  item.identifier
+compile '/img/**/*' do
+  write item.identifier.to_s
 end
 
-route '/views/*.{html,md}' do
-  if item.identifier =~ '/views/index.*'
-    '/index.html'
-  else
-    "/" + item.identifier.without_ext.split("/")[2] + "/index.html"
-  end
-end
-
-route '/**/*.{html,md}' do
-  if item.identifier =~ '/index.*'
-    '/index.html'
-  else
-    item.identifier.without_ext + '/index.html'
-  end
-end
-
-compile '/js/**/*' do
-  if File.basename(item.identifier) == 'bundle.js'
-    write item.identifier.to_s
-  end
+compile '/font-awesome*/**/*' do
+  write item.identifier.to_s
 end
 
 compile '/**/*' do
-  write item.identifier.to_s
+  # do nothing
 end
 
 layout '/**/*', :erb
