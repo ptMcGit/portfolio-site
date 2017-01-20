@@ -15,6 +15,7 @@ end
 
 compile '/stylesheets/*.scss' do
   filter :sass, syntax: :scss
+  filter :rainpress
   write item.identifier.without_ext + ".css"
 end
 

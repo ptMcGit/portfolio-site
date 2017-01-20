@@ -7,4 +7,5 @@ group 'nanoc' do
   gem 'adsf'
   gem 'guard-nanoc'
   gem 'sass'
+  gem 'rainpress'
 end
