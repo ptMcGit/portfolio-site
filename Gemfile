@@ -3,7 +3,7 @@ source "https://rubygems.org"
 
 gem 'nanoc'
 
-group 'nanoc' do
+group :nanoc do
   gem 'adsf'
   gem 'guard-nanoc'
   gem 'sass'
