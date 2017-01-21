@@ -8,24 +8,12 @@
     #video-slideshow-title {
         font-size: 2em;
     }
-    div.video-box {
-        text-align:         center;
-        margin: 0;
+    #video-box {
         display: flex;
         justify-content: center;
         #video-slideshow-iframe {
             border:         3px outset $color-1;
             box-shadow:     8px 8px 15px $black;
-            display: inline-block;
-            float: left;
-        }
-        #video-slideshow-prev-button{
-            display: inline-block;
-            float: left;
-        }
-        #video-slideshow-next-button{
-            display: inline-block;
-            float: left;
         }
     }
 }
