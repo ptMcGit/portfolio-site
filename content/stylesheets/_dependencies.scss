@@ -1,0 +1,39 @@
+/* Colors */
+
+$beige:             #eadfb0;
+$black:             #000000;
+$dark-gray:         #48423f;
+$mid-gray:          #534c48;
+$bright-yellow:     #fffb00;
+$faded-maroon:      #563939;
+
+$color-1:           $beige;
+$color-2:           $bright-yellow;
+
+$background-1:      $dark-gray;
+
+/* Sizes */
+
+$small:     1em;
+$xl:        5em;
+
+/* Typography */
+
+$sans-serif:        'Bangers', helvetica, sans-serif;
+$sans-serif-2:      helvetica, sans-serif;
+$monospace:         courier, monospace, arial, sans-serif;
+
+$font-family-1:     $sans-serif;
+$font-family-2:     $monospace;
+$font-family-3:     $sans-serif-2;
+$font-size-1:       $small;
+
+/* Miscellaneous */
+
+$border-1:          2px dotted $color-2;
+
+$text-shadow-1:     2px 2px 2px $black;
+
+$default-padding:   2% 2% 2% 2%;
+
+$default-margin:    0% 5% 0% 5%;
