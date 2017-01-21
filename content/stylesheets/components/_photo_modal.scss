@@ -1,34 +1,23 @@
 #photo {
-    padding: 0;
-    opacity: none;
-    text-align:         center;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-        #photo-slideshow-url {
-            border:         3px outset $color-1;
-            box-shadow:     8px 8px 15px $black;
-            display: inline-block;
-            float: left;
+    background: transparent;
+    border: initial;
+    padding: 5% 0% 0% 0%;
+    #photo-box {
+        display: flex;
+        justify-content: center;
+        #photo-inner-box {
+            height: 475px;
+            width: 600px;
+            #photo-slideshow-url {
+                border:         3px outset $color-1;
+                box-shadow:     8px 8px 15px $black;
+            }
         }
-        #photo-slideshow-prev-button{
-            display: inline-block;
-            float: left;
-        }
-        #photo-slideshow-next-button{
-            display: inline-block;
-            float: left;
-        }
-
+    }
 }
 
 #photo-modal-transparency {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .8);
     background-color: rgb(0, 0, 0);
-    opacity: .6;
-}
-
-#photo-modal-box {
-    background-color: transparent;
-    border: inherit;
+    opacity: .8;
 }
