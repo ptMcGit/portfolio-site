@@ -65,8 +65,8 @@ DEPENDENCIES
   adsf
   guard-nanoc
   nanoc
-  sass
   rainpress
+  sass
 
 BUNDLED WITH
    1.13.7
