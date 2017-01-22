@@ -14,6 +14,7 @@
 div.button-list {
     display:    inline-table;
     width:      100%;
+    font-family: $font-family-2;
     @media screen and (max-width: 32em) {
         font-size: .75em;
     }
