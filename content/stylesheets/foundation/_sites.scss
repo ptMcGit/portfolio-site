@@ -47,6 +47,8 @@ footer {
     border-top:     $border-1;
     margin:         $default-margin;
     padding:        $default-padding;
+    position: relative;
+    bottom: 8%;
 }
 
 #main {
