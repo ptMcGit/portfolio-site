@@ -33,8 +33,21 @@
     color:          #575b5f;
     text-shadow:    $text-shadow-1;
 }
+
 #top-link {
     position: fixed;
     right: 3%;
     bottom: 3%;
+}
+
+.fa-flickr {
+    position: fixed;
+    bottom: 7%;
+    right: 7%;
+}
+
+.fa-youtube-square {
+    position: fixed;
+    bottom: 7%;
+    right: 7%;
 }
