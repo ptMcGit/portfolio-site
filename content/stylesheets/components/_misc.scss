@@ -39,6 +39,8 @@ div.horizontal-rule {
 
 div.site-box {
     @include            content_box;
+    display: flex;
+    justify-content: center;
     img {
         box-shadow:     8px 8px 15px $black;
         border-radius:  100%;
