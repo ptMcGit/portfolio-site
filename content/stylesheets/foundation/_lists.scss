@@ -22,7 +22,7 @@ div.button-list {
         font-size: 1em;
     }
     @media screen and (max-width: 25em) {
-        font-size: .5em;
+        font-size: 1.1em;
     }
 
     ul.button-list-items {
@@ -44,4 +44,5 @@ ul#second-nav {
     text-align: center;
     font-size: 2em;
     font-family: $font-family-1;
+    padding: 0;
 }
