@@ -10,7 +10,7 @@ div.wrapper {
 body {
     color:              $color-1;
     background-color:   $background-1;
-    font-family:        $font-family-2;
+    font-family:        $font-family-3;
     font-size:          $small;
     text-align:         center;
 }
@@ -25,13 +25,13 @@ nav {
 section {
     min-height:     100vh;
     clear:          both;
-    padding-top:    3em;
+    padding-top:    1em;
     overflow:       auto;
     h2 {
         color:          $color-1;
         font-family:    $sans-serif;
         text-shadow:    $text-shadow-1;
-        font-size:      3.5em;
+        margin-bottom: 0;
     }
 }
 

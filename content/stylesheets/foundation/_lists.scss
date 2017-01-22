@@ -28,3 +28,10 @@ ul {
     list-style-position:    outside;
     text-align:             left;
 }
+
+ul#second-nav {
+    list-style: none;
+    text-align: center;
+    font-size: 2em;
+    font-family: $font-family-1;
+}
