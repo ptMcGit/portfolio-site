@@ -1,0 +1,12 @@
+@mixin button-list {
+    display:            inline;
+    list-style-type:    none;
+    margin:             0;
+    padding:            $default-padding;
+    text-align:         center;
+}
+
+@mixin list-cell {
+    display:    inline-block;
+    margin:     0;
+}

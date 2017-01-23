@@ -1,0 +1,31 @@
+* {
+    border: 1px dashed white;
+    overflow: hidden;
+}
+
+#top {
+    header {
+        /*background: green;*/
+    }
+}
+
+body {
+    @media (max-width: $x-large) {
+        background: indigo;
+    }
+    @media (max-width: $large) {
+        background: blue;
+    }
+    @media (max-width: $medium) {
+        background: green;
+    }
+    @media (max-width: $small) {
+        background: orange;
+    }
+    @media (max-width: $x-small) {
+        background: red;
+    }
+    @media (min-width: $x-large) {
+        background: gray;
+    }
+}

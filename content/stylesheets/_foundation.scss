@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family:        $font-family-1;
+    font-size:          1em;
+    color:              $color-1;
+    background-color:   $background-1;
+    text-align:         center;
+}
+
+section {
+    height:     100vh;
+    overflow:       hidden;
+}
+
+a {
+    text-decoration:    none;
+    color:              $color-1;
+    text-shadow:        $text-shadow-1;
+}

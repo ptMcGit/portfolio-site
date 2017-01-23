@@ -1,13 +1,6 @@
-@import "dependencies";
+@import "globals";
+@import "foundation";
 
-@import "foundation/sites";
-@import "foundation/lists";
-
-@import "components/misc";
-@import "components/buttons";
-@import "components/links";
-@import "components/fa-icons";
-@import "components/headers";
-@import "components/modals";
-@import "components/video";
-@import "components/photo_modal";
+@import "top/header";
+@import "top/top";
+@import "debug";
