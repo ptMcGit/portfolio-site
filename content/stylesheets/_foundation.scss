@@ -1,18 +1,17 @@
-html, body {
-    margin: 0;
-}
-
 body {
-    font-family:        $font-family-1;
-    font-size:          1em;
+    font-family:        $font-family-3;
     color:              $color-1;
     background-color:   $background-1;
-    text-align:         center;
-}
+ }
 
 section {
     height:     100vh;
     overflow:       hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-1;
+    text-align: center;
 }
 
 a {
