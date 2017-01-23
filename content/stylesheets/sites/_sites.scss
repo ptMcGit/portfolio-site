@@ -1,0 +1,73 @@
+#sites {
+    text-align: center;
+    header {
+        height: 15%;
+        @include alignment-wrapper-1;
+        h2 {
+            @include align-1;
+        }
+    }
+    #site-box {
+        height: 40%;
+        @include alignment-wrapper-1;
+        #site-slideshow-site_url {
+            @include align-1;
+            height: 100%;
+            width: auto;
+            #site-slideshow-img_url {
+                box-shadow:     8px 8px 15px $black;
+                border-radius:  100%;
+                max-width:      100%;
+                height:         auto;
+
+            }
+        }
+        @mixin button {
+            @include button_as_link;
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            width: auto;
+        }
+        #site-slideshow-next-button {
+            @include button;
+        }
+        #site-slideshow-prev-button {
+            @include button;
+        }
+    }
+    #site-description {
+        height: 45%;
+        .wrapper-1 {
+            @include alignment-wrapper-1;
+            height: 15%;
+            #site-slideshow-code_url {
+                @include align-1;
+            }
+        }
+        .wrapper-2 {
+            @include alignment-wrapper-1;
+            height: 15%;
+            #site-slideshow-short_desc {
+                @include align-1;
+            }
+        }
+        .wrapper-3 {
+            @include alignment-wrapper-1;
+            height: 15%;
+            #site-slideshow-tech_desc {
+                @include align-1;
+            }
+        }
+        .wrapper-4 {
+            @include alignment-wrapper-1;
+            height: 55%;
+            #site-slideshow-work_desc {
+                @include align-1;
+                vertical-align: top;
+                line-height: 150%;
+                padding-top: 3%;
+            }
+        }
+    }
+}
