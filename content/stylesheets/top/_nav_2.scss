@@ -1,0 +1,47 @@
+#top {
+    nav {
+        @media screen {
+            @media (orientation: landscape) {
+                @media (max-width: $x-large) {
+                }
+                @media (max-width: $large) {
+                }
+                @media (max-width: $medium) {
+                }
+                @media (max-width: $small) {
+                }
+                @media (min-width: $x-small) {
+                    li {
+                        font-size: 2.9vw;
+                    }
+                }
+            }
+        }
+        @media (orientation: portrait) {
+            @media (min-width: $x-small) {
+                li {
+                    font-size: 2.9vw;
+                }
+            }
+        }
+        #second-nav {
+            height: 45%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-size: 6vw;
+            button {
+                @include button_as_link;
+                height: 33%;
+                font-size: inherit;
+            }
+            a {
+                display: block;
+                line-height: 10vh;
+                height: 33%;
+            }
+        }
+    }
+}
