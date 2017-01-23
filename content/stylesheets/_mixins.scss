@@ -1,0 +1,21 @@
+// @mixin alignment-wrapper-1 {
+    // display: -moz-flex;
+    // display: -webkit-flex;
+    // display: flex;
+    // justify-content: -moz-center;
+    // justify-content: -webkit-center;
+    // justify-content: center;
+    // flex-direction: -moz-column;
+    // flex-direction: -webkit-column;
+    // flex-direction: column;
+// }
+
+@mixin alignment-wrapper-1 {
+    display: table;
+    margin: auto;
+}
+
+@mixin align-1 {
+    display: table-cell;
+    vertical-align: middle;
+}
