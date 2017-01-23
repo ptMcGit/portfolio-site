@@ -1,6 +1,6 @@
 * {
-    border: 1px dashed white;
-    overflow: hidden;
+    border: 1px dashed white !important;
+    overflow: hidden !important;
 }
 
 #top {
@@ -17,7 +17,7 @@ body {
         background: green;
     }
     @media (max-width: $medium) {
-        background: yellow;
+        background: #8d8d68;
     }
     @media (max-width: $small) {
         background: orange;
