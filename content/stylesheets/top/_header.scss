@@ -1,100 +1,40 @@
 #top {
     @media screen {
         @media (orientation: landscape) {
-            @media (max-width: $x-large) {
-                #my-name {
-                    font-size: 309%;
-                }
-                #occupational-description {
-                    font-size: 85%;
-                }
-                .large-bracket {
-                    font-size: 150%;
-                }
-            }
             @media (max-width: $large) {
                 #my-name {
-                    font-size: 164%;
-                }
-                #occupational-description {
-                    font-size: 72%;
-                }
-                .large-bracket {
-                    font-size: 150%;
-                }
-            }
-            @media (max-width: $medium) {
-                #my-name {
-                    font-size: 321%;
-                    padding-top: 9%;
+                    font-size: 12vw;
                 }
                 #occupational-description {
                     font-size: 100%;
-                    display: none;
                 }
                 .large-bracket {
-                    font-size: 150%;
-                    display: none;
+                    font-size: 100%;
                 }
             }
-            @media (max-width: $small) {
+            @media (min-width: $large) {
                 #my-name {
-                    font-size: 334%;
+                    font-size: 12vw
                 }
                 #occupational-description {
-                    font-size: 100%;
                     display:  none;
                 }
                 .large-bracket {
                     display:  none;
-                    font-size: 150%;
-                }
-            }
-            @media (min-width: $x-large) {
-                #my-name {
-                    font-size: 400%;
-                }
-                #occupational-description {
-                    font-size: 100%;
-                }
-                .large-bracket {
-                    font-size: 150%;
                 }
             }
         }
     }
     @media (orientation: portrait) {
-        @media (max-width: $small) {
+        @media (min-width: $x-small) {
             #my-name {
-                font-size: 272%;
+                font-size: 12vw;
             }
             #occupational-description {
-                font-size: 75%;
+                font-size: 3vw;
             }
             .large-bracket {
-                font-size: 150%;
-            }
-        }
-        @media (max-width: $x-small) {
-            #my-name {
-                font-size: 277%;
-            }
-            #occupational-description {
-                font-size: 70%;
-            }
-            .large-bracket {
-                font-size: 150%;
-            }
-        }
-        @media (min-width: $medium) {
-            #my-name {
-                font-size: 470%;
-            }
-            #occupational-description {
-                font-size: 77%;
-            }
-            .large-bracket {
-                font-size: 150%;
+                font-size: 6vw;
             }
         }
     }

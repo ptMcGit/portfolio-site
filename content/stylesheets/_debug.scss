@@ -11,13 +11,13 @@
 
 body {
     @media (max-width: $x-large) {
-        background: indigo;
-    }
-    @media (max-width: $large) {
         background: blue;
     }
-    @media (max-width: $medium) {
+    @media (max-width: $large) {
         background: green;
+    }
+    @media (max-width: $medium) {
+        background: yellow;
     }
     @media (max-width: $small) {
         background: orange;
@@ -26,6 +26,6 @@ body {
         background: red;
     }
     @media (min-width: $x-large) {
-        background: gray;
+        background: indigo;
     }
 }
