@@ -1,47 +1,44 @@
-#top {
-    nav {
-        @media screen {
-            @media (orientation: landscape) {
-                @media (max-width: $x-large) {
-                }
-                @media (max-width: $large) {
-                }
-                @media (max-width: $medium) {
-                }
-                @media (max-width: $small) {
-                }
-                @media (min-width: $x-small) {
-                    li {
-                        font-size: 2.9vw;
-                    }
-                }
-            }
-        }
-        @media (orientation: portrait) {
-            @media (min-width: $x-small) {
-                li {
-                    font-size: 2.9vw;
-                }
-            }
-        }
-        #second-nav {
-            height: 45%;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            font-size: 6vw;
-            button {
-                @include button_as_link;
-                height: 33%;
-                font-size: inherit;
-            }
-            a {
-                display: block;
-                line-height: 10vh;
-                height: 33%;
-            }
-        }
+nav#main {
+  #nav-2 {
+    height: 45%;
+    font-style: $font-family-1;
+    font-size: 5.7vw;
+    text-align: center;
+    #about-me-button {
+      @include button_as_link;
+      height: 33%;
+      font-size: inherit;
+      font-family: inherit;
+      width: 100%;
     }
+    a {
+      display: block;
+      line-height: 10vh;
+      height: 33%;
+      width: 100%
+    }
+  }
+}
+
+nav#main {
+  #nav-2 {
+    @media screen {
+      @media (orientation: landscape) {
+        font-size: 3.4vw;
+        height: 53%;
+        @media (min-width: $desktop-landscape-width) {
+          height: 34%;
+        }
+      }
+      @media (orientation: portrait) {
+        @media (min-width: $table-portrait-width) {
+          font-size: 4.5vw;
+          height: 33%;
+          a {
+            line-height: 8vw;
+          }
+        }
+      }
+    }
+  }
 }

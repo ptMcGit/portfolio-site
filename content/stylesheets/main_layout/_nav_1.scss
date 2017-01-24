@@ -1,61 +1,75 @@
-#top {
-    nav {
-        @media screen {
-            @media (orientation: landscape) {
-                @media (max-width: $x-large) {
-                }
-                @media (max-width: $large) {
-                }
-                @media (max-width: $medium) {
-                }
-                @media (max-width: $small) {
-                }
-                @media (min-width: $x-small) {
-                    .button-and-text {
-                        font-size: 2.9vw;
-                    }
-                    #icon-buttons {
-                        margin-left: 10%;
-                        margin-right: 10%;
-                    }
-
-                }
-            }
+nav#main {
+  #nav-1 {
+    display: table;
+    height: 55%;
+    width: 69%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4.6vw;
+    #icon-buttons {
+      display: table-cell;
+      vertical-align: middle;
+      button {
+        @include button_as_link
+      }
+      .button-and-text {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+        .icon-wrapper {
+          display: block;
+          #email-button {
+            padding-bottom: 2.5%;
+          }
         }
-        @media (orientation: portrait) {
-            @media (min-width: $x-small) {
-                .button-and-text {
-                    font-size: 2.9vw;
-                }
-                #icon-buttons {
-                    margin-left: 10%;
-                    margin-right: 10%;
-                }
-            }
+        .text-wrapper {
+          display: block;
+          p {
+            margin: 0;
+          }
         }
-
-        #icon-buttons {
-            background: green;
-            height: 55%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-content: center;
-            button {
-                @include button_as_link
-            }
-            .button-and-text {
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-                flex-wrap: wrap;
-                p {
-                    margin: 0;
-                }
-                #email-button {
-                    margin: -1px;
-                }
-            }
-        }
+      }
     }
+  }
+}
+
+nav#main {
+  #nav-1 {
+    @media screen {
+      @media (orientation: landscape) {
+        height: 47%;
+        font-size: 2.9vw;
+        #icon-buttons {
+          .button-and-text {
+            width: 23%;
+          }
+        }
+        @media (min-width: $desktop-landscape-width) {
+          font-size: 1.9vw;
+          height: 30%;
+          #icon-buttons {
+            .button-and-text {
+              width: 13%;
+              height: 24%;
+              padding-bottom: 0%;
+              padding-top: 2%;
+            }
+          }
+        }
+      }
+    }
+    @media (orientation: portrait) {
+      @media (min-width: $table-portrait-width) {
+        font-size: 3.3vw;
+        height: 26%;
+        width: 86%;
+        #icon-buttons {
+          .button-and-text {
+            width: 19%;
+          }
+        }
+      }
+    }
+  }
 }
