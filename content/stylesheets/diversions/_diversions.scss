@@ -1,0 +1,21 @@
+#diversions {
+    height: 85vh;
+    text-align: center;
+    header {
+        height: 15%;
+        @include alignment-wrapper-1;
+        h2 {
+            @include align-1;
+        }
+    }
+    button {
+        @include button_as_link;
+    }
+    .wrapper {
+        height: 42.5%;
+        @include alignment-wrapper-1;
+        .inner-wrapper {
+            @include align-1;
+        }
+    }
+}
