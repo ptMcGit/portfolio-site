@@ -8,7 +8,7 @@ module.exports = (function(){
         alt_text:       "N Rooms Screenshot",
         code_url:       "https://github.com/ptMcGit/reddit_clone",
         short_desc:     "A social media platform with reddit-like features.",
-        tech_desc:      "(Ruby on Rails, heroku).",
+        tech_desc:      "Ruby on Rails, heroku",
         work_desc:      "\u2022 front-end development: Bootstrap, jQuery<br>\
 \u2022 back-end development: PostgreSQL, devise, pundit, RSpec, Capybara",
         background:     "#4f97ce"
@@ -20,7 +20,7 @@ module.exports = (function(){
         alt_text:       "Pearl Screenshot",
         code_url:       "https://github.com/TIY-LiveLocal/Pearl",
         short_desc:     "A web application that connects users with local businesses.",
-        tech_desc:      "(Ruby on Rails, heroku, Firebase)",
+        tech_desc:      "Ruby on Rails, heroku, Firebase",
         work_desc:      "\u2022 basic CRUD and RSpec testing<br>\
 \u2022 Sidekiq workers with Redis for RESTful calls to Locu, Yelp, and Google Places APIs<br>\
 \u2022 Basic authentication solution",
@@ -33,7 +33,7 @@ module.exports = (function(){
         alt_text:       "Portfolio Site Screenshot",
         code_url:       "https://github.com/ptMcGit/portfolio-site",
         short_desc:     "The code for this site.",
-        tech_desc:      "(nanoc)",
+        tech_desc:      "nanoc",
         work_desc:      "\u2022 jQuery, Font-Awesome, SCSS",
         background:     "#48423f"
     };
