@@ -3,11 +3,10 @@
 @import "foundation";
 @import "mixins";
 
-@import "main_layout";
-@import "top/top";
-@import "top/header";
-@import "top/nav_1";
-@import "top/nav_2";
+@import "main_layout/main_layout";
+@import "main_layout/header";
+@import "main_layout/nav_1";
+@import "main_layout/nav_2";
 
 @import "sites/sites";
 
