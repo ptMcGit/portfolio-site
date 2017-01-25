@@ -11,6 +11,10 @@ section {
     overflow:       hidden;
 }
 
+section#diversions {
+  height: 85vh;
+}
+
 footer {
     height: 15vh;
     @include alignment-wrapper-1;

@@ -1,21 +1,54 @@
-#diversions {
-    height: 85vh;
-    text-align: center;
+section#diversions {
+  text-align: center;
+  header {
+    height: 23%;
+    @include alignment-wrapper-1;
+    h2 {
+      font-size: 7vw;
+      @include align-3;
+    }
+  }
+  button {
+    @include button_as_link;
+  }
+  .fa-5x {
+    font-size: 3em;
+  }
+  .wrapper-1 {
+    height: 42%;
+    @include alignment-wrapper-1;
+    .inner-wrapper {
+      @include align-1;
+    }
+  }
+  .wrapper-2 {
+    height: 35%;
+    @include alignment-wrapper-1;
+    .inner-wrapper {
+      @include align-1;
+    }
+  }
+}
+
+section#diversions {
+  @media (orientation: portrait) {
     header {
-        height: 15%;
-        @include alignment-wrapper-1;
-        h2 {
-            @include align-1;
-        }
+      height: 18%;
+      h2 {
+        font-size: 15vw;
+      }
     }
-    button {
-        @include button_as_link;
+    .wrapper-1 {
+      height: 40%;
     }
-    .wrapper {
-        height: 42.5%;
-        @include alignment-wrapper-1;
-        .inner-wrapper {
-            @include align-1;
-        }
+    .wrapper-2 {
+      height: 42%;
+      .inner-wrapper {
+        @include align-2;
+      }
     }
+    .fa-5x {
+      font-size: 4em;
+    }
+  }
 }
