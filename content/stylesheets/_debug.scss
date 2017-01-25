@@ -17,22 +17,23 @@ img {
 }
 
 body {
-    @media (max-width: $x-large) {
-        background: blue;
-    }
-    @media (max-width: $large) {
-        background: green;
-    }
-    @media (max-width: $medium) {
-        background: #8d8d68;
-    }
-    @media (max-width: $small) {
-        background: orange;
-    }
-    @media (max-width: $x-small) {
-        background: red;
-    }
-    @media (min-width: $x-large) {
-        background: indigo;
-    }
+  background: red !important;
+  @media (min-width: $x-small) {
+    background: orange !important;
+  }
+  @media (min-width: $small) {
+    background: #8d8d68 !important;
+  }
+  @media (min-width: $medium) {
+    background: green !important;
+  }
+  @media (min-width: $large) {
+    background: blue !important;
+  }
+  @media (min-width: $x-large) {
+    background: indigo !important;
+  }
+  @media (min-width: $xx-large) {
+    background: violet !important;
+  }
 }
