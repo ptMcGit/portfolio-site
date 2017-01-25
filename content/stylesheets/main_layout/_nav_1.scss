@@ -1,4 +1,4 @@
-nav#main {
+nav#main-nav {
   #nav-1 {
     @include alignment-wrapper-1;
     height: 55%;
@@ -33,7 +33,7 @@ nav#main {
   }
 }
 
-nav#main {
+nav#main-nav {
   #nav-1 {
     @media screen {
       @media (orientation: landscape) {

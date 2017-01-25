@@ -1,8 +1,8 @@
-header#main {
+header#main-header {
     height: 30vh;
 }
 
-nav#main {
+nav#main-nav {
     height: 70vh;
 }
 
@@ -15,10 +15,6 @@ section#diversions {
   height: 85vh;
 }
 
-footer {
+footer#main-footer {
     height: 15vh;
-    @include alignment-wrapper-1;
-    div {
-        @include align-1;
-    }
 }
