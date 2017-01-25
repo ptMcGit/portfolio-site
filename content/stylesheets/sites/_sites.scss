@@ -158,7 +158,9 @@ section#sites {
       }
       @media (min-width: $desktop-landscape-width) {
         header {
-          @include align-3;
+          h1 {
+            @include align-3;
+          }
         }
         #site-box {
           height: 29%;
