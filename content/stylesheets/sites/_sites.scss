@@ -73,6 +73,7 @@ section#sites {
       height: 0%;
       #site-slideshow-work_desc {
         @include align-1;
+        text-align: left;
       }
     }
     .wrapper-5 {
@@ -130,6 +131,33 @@ section#sites {
           }
           #site-slideshow-code_url-icon {
             vertical-alignment: top;
+          }
+        }
+      }
+      @media (min-width: 700px) {
+        #site-box {
+          width: 48%;
+        }
+        #site-description {
+          .wrapper-2 {
+            height: 20%;
+          }
+          .wrapper-3 {
+            height: 15%;
+          }
+          .wrapper-4 {
+            @include alignment-wrapper-1;
+            height: 30%;
+            #site-slideshow-work_desc {
+              @include align-1;
+              vertical-align: top;
+              line-height: 3vw;
+            }
+          }
+          .wrapper-5 {
+            height: 35%;
+            #site-slideshow-code_url-icon {
+            }
           }
         }
       }
