@@ -1,4 +1,4 @@
-#sites {
+section#sites {
   text-align: center;
   header {
     @include alignment-wrapper-1;
@@ -21,7 +21,6 @@
         border-radius:  100%;
         max-width:      100%;
         height:         auto;
-
       }
     }
     @mixin button {
@@ -41,7 +40,7 @@
     height: 45%;
     .wrapper-1 {
       @include alignment-wrapper-1;
-      height: 4%;
+      height: 0%;
       #site-slideshow-code_url {
         @include align-1;
         display: none;
@@ -49,27 +48,29 @@
     }
     .wrapper-2 {
       @include alignment-wrapper-1;
-      height: 15%;
+      height: 25%;
       .large-bracket {
         @include align-1;
-        font-size: 9vw;
+        font-size: 7vw;
       }
       #site-slideshow-tech_desc {
         @include align-1;
-        font-size: 6vw;
+        font-size: 4.9vw;
       }
     }
     .wrapper-3 {
       @include alignment-wrapper-1;
-      height: 23%;
+      height: 15%;
+      max-width: 83%;
       #site-slideshow-short_desc {
         @include align-1;
+        font-size: 4.5vw;
       }
     }
     .wrapper-4 {
       @include alignment-wrapper-1;
       display: none;
-      height: 55%;
+      height: 0%;
       #site-slideshow-work_desc {
         @include align-1;
         vertical-align: top;
@@ -79,10 +80,61 @@
     }
     .wrapper-5 {
       @include alignment-wrapper-1;
-      height: 15%;
+      height: 60%;
       #site-slideshow-code_url-icon {
         @include align-1;
-        padding-top: 11%;
+        padding-bottom: 82%;
+      }
+    }
+  }
+}
+section#sites {
+  @media screen {
+    @media (orientation: landscape) {
+      header {
+        height: 15%;
+        h2 {
+          font-size: 6vw;
+        }
+      }
+      #site-box {
+        height: 40%;
+        width: 52%;
+        $padding: 45%;
+        #site-slideshow-prev-button {
+          padding-right: $padding;
+        }
+        #site-slideshow-next-button {
+          padding-left: $padding;
+        }
+      }
+      #site-description {
+        height: 45%;
+        .wrapper-2 {
+          height: 25%;
+          #site-slideshow-tech_desc {
+            font-size: 3.5vw;
+          }
+          .large-bracket {
+            font-size: 5vw;
+          }
+        }
+        .wrapper-3 {
+          height: 29%;
+          #site-slideshow-short_desc {
+            padding-bottom: 0%;
+            font-size: 2.7vw;
+          }
+        }
+        .wrapper-5 {
+          height: 56%;
+          .fa-4x {
+            font-size: 3em;
+          }
+          #site-slideshow-code_url-icon {
+            padding-bottom: 85%;
+          }
+        }
       }
     }
   }
