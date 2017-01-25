@@ -4,8 +4,7 @@ section#sites {
     @include alignment-wrapper-1;
     height: 15%;
     h2 {
-      @include align-1;
-      padding-top: 15%;
+      @include align-3;
       font-size: 18vw;
     }
   }
@@ -210,7 +209,47 @@ section#sites {
           .wrapper-5 {
             height: 33%;
             #site-slideshow-code_url-icon {
-              @align-2;
+              @include align-2;
+            }
+          }
+        }
+      }
+      @media (min-width: $tablet-portrait-width){
+        header {
+          height: 20%;
+          h2 {
+            @include align-3;
+            font-size: 14vw;
+          }
+        }
+        #site-box {
+          height: 22%;
+        }
+        #site-description {
+          height: 58%;
+          .fa-4x {
+            font-size: 4em;
+          }
+          .wrapper-2 {
+            height: 15%;
+          }
+          .wrapper-3 {
+            height: 14%;
+            #site-slideshow-short_desc {
+              font-size: 3.5vw;
+            }
+          }
+          .wrapper-4 {
+            height: 27%;
+            #site-slideshow-work_desc {
+              font-size: 3.2vw;
+              line-height: 5vw;
+            }
+          }
+          .wrapper-5 {
+            height: 44%;
+            #site-slideshow-code_url-icon {
+              @include align-2;
             }
           }
         }
