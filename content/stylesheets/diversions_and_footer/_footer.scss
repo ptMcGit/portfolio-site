@@ -1,0 +1,9 @@
+footer#main {
+  font-size: 3vw;
+}
+
+footer#main {
+  @media (orientation: portrait) {
+    font-size: 4vw;
+  }
+}
