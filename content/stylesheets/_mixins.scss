@@ -19,3 +19,13 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+@mixin align-2 {
+  display: table-cell;
+  vertical-align: top;
+}
+
+@mixin align-3 {
+  display: table-cell;
+  vertical-align: bottom;
+}

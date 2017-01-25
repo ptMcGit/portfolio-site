@@ -81,7 +81,6 @@ section#sites {
       height: 60%;
       #site-slideshow-code_url-icon {
         @include align-1;
-        padding-bottom: 82%;
       }
     }
   }
@@ -130,7 +129,7 @@ section#sites {
             font-size: 3em;
           }
           #site-slideshow-code_url-icon {
-            vertical-alignment: top;
+            @include align-2;
           }
         }
       }
@@ -149,21 +148,18 @@ section#sites {
             @include alignment-wrapper-1;
             height: 30%;
             #site-slideshow-work_desc {
-              @include align-1;
-              vertical-align: top;
+              @include align-2;
               line-height: 3vw;
             }
           }
           .wrapper-5 {
             height: 35%;
-            #site-slideshow-code_url-icon {
-            }
           }
         }
       }
       @media (min-width: $desktop-landscape-width) {
         header {
-          vertical-align: bottom;
+          @include align-3;
         }
         #site-box {
           height: 29%;
@@ -173,9 +169,6 @@ section#sites {
           .wrapper-5 {
             .fa-4x {
               font-size: 4em;
-            }
-            #site-slideshow-code_url-icon {
-              vertical-align: top;
             }
           }
         }
@@ -209,14 +202,16 @@ section#sites {
             height: 34%;
             max-width: 72%;
             #site-slideshow-work_desc {
-              @include align-1;
-              vertical-align: top;
+              @include align-2;
               text-align: left;
               font-size:4.1vw;
             }
           }
           .wrapper-5 {
             height: 33%;
+            #site-slideshow-code_url-icon {
+              @align-2;
+            }
           }
         }
       }
