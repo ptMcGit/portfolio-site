@@ -1,6 +1,6 @@
 nav#main {
   #nav-1 {
-    display: table;
+    @include alignment-wrapper-1;
     height: 55%;
     width: 69%;
     text-align: center;
@@ -8,8 +8,7 @@ nav#main {
     margin-right: auto;
     font-size: 4.6vw;
     #icon-buttons {
-      display: table-cell;
-      vertical-align: middle;
+      @include align-1;
       button {
         @include button_as_link
       }
