@@ -73,9 +73,6 @@ section#sites {
       height: 0%;
       #site-slideshow-work_desc {
         @include align-1;
-        vertical-align: top;
-        line-height: 150%;
-        padding-top: 3%;
       }
     }
     .wrapper-5 {
@@ -132,7 +129,47 @@ section#sites {
             font-size: 3em;
           }
           #site-slideshow-code_url-icon {
-            padding-bottom: 85%;
+            vertical-alignment: top;
+          }
+        }
+      }
+    }
+    @media (orientation: portrait) {
+      @media (min-width: 375px) {
+        background: blue;
+        header {
+          height: 13%;
+        }
+        #site-box {
+          height: 34%;
+        }
+        #site-description {
+          height: 53%;
+          .wrapper-2 {
+            height: 18%;
+            #site-slideshow-short_desc {
+              font-size: 6.9vw;
+            }
+            .large-bracket {
+              font-size: 10vw;
+            }
+          }
+          .wrapper-3 {
+            height: 15%;
+          }
+          .wrapper-4 {
+            @include alignment-wrapper-1;
+            height: 34%;
+            max-width: 72%;
+            #site-slideshow-work_desc {
+              @include align-1;
+              vertical-align: top;
+              text-align: left;
+              font-size:4.1vw;
+            }
+          }
+          .wrapper-5 {
+            height: 33%;
           }
         }
       }
