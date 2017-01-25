@@ -33,7 +33,7 @@ module.exports = (function(){
         alt_text:       "Portfolio Site Screenshot",
         code_url:       "https://github.com/ptMcGit/portfolio-site",
         short_desc:     "The code for this site.",
-        tech_desc:      "nanoc",
+        tech_desc:      "nanoc, GitHub",
         work_desc:      "\u2022 jQuery, Font-Awesome, SCSS",
         background:     "#48423f"
     };
