@@ -134,7 +134,7 @@ section#sites {
           }
         }
       }
-      @media (min-width: 700px) {
+      @media (min-width: $lg-phone-landscape-width) {
         #site-box {
           width: 48%;
         }
