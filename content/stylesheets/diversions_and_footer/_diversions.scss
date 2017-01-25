@@ -51,4 +51,20 @@ section#diversions {
       font-size: 4em;
     }
   }
+  @media (orientation: landscape) {
+    @media (min-width: $lg-phone-landscape-width) {
+      .wrapper-1 {
+        height: 41%;
+      }
+      .wrapper-2 {
+        height: 36%;
+        .inner-wrapper {
+          @include align-2;
+        }
+      }
+      .fa-5x {
+        font-size: 4em;
+      }
+    }
+  }
 }
