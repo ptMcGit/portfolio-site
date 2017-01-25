@@ -11,6 +11,11 @@ $xx-large:  1024px;
     font-size: 1vw !important;
 }
 
+img {
+  height: 5px !important;
+  width: 5px !important;
+}
+
 body {
     @media (max-width: $x-large) {
         background: blue;
