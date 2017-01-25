@@ -175,7 +175,7 @@ section#sites {
       }
     }
     @media (orientation: portrait) {
-      @media (min-width: 375px) {
+      @media (min-width: $lg-phone-portrait-width) {
         background: blue;
         header {
           height: 13%;
