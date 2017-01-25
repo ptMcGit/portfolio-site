@@ -60,7 +60,7 @@ nav#main {
       }
     }
     @media (orientation: portrait) {
-      @media (min-width: $table-portrait-width) {
+      @media (min-width: $tablet-portrait-width) {
         font-size: 3.3vw;
         height: 26%;
         width: 86%;

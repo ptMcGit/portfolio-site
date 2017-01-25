@@ -45,7 +45,7 @@ header#main {
       }
     }
     @media (orientation: portrait) {
-      @media (min-width: $table-portrait-width) {
+      @media (min-width: $tablet-portrait-width) {
         .wrapper {
           #my-name {
             font-size: 11vw;
