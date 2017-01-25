@@ -161,6 +161,25 @@ section#sites {
           }
         }
       }
+      @media (min-width: $desktop-landscape-width) {
+        header {
+          vertical-align: bottom;
+        }
+        #site-box {
+          height: 29%;
+          width: 40%;
+        }
+        #site-description {
+          .wrapper-5 {
+            .fa-4x {
+              font-size: 4em;
+            }
+            #site-slideshow-code_url-icon {
+              vertical-align: top;
+            }
+          }
+        }
+      }
     }
     @media (orientation: portrait) {
       @media (min-width: 375px) {
