@@ -50,6 +50,16 @@ section#diversions {
     .fa-5x {
       font-size: 4em;
     }
+    @media (min-width: $tablet-portrait-width) {
+      header {
+        h2 {
+          font-size: 12vw;
+        }
+      }
+      .fa-5x {
+        font-size: 5em;
+      }
+    }
   }
   @media (orientation: landscape) {
     @media (min-width: $lg-phone-landscape-width) {
@@ -64,6 +74,16 @@ section#diversions {
       }
       .fa-5x {
         font-size: 4em;
+      }
+    }
+    @media (min-width: $desktop-landscape-width) {
+      header {
+        h2 {
+          font-size: 5vw;
+        }
+      }
+      .fa-5x {
+        font-size: 5em;
       }
     }
   }
