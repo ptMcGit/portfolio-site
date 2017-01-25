@@ -177,13 +177,13 @@ section#sites {
       @media (min-width: $lg-phone-portrait-width) {
         background: blue;
         header {
-          height: 13%;
+          height: 20%;
         }
         #site-box {
-          height: 34%;
+          height: 31%;
         }
         #site-description {
-          height: 53%;
+          height: 49%;
           .wrapper-2 {
             height: 18%;
             #site-slideshow-short_desc {
@@ -198,7 +198,7 @@ section#sites {
           }
           .wrapper-4 {
             @include alignment-wrapper-1;
-            height: 34%;
+            height: 29%;
             max-width: 72%;
             #site-slideshow-work_desc {
               @include align-2;
@@ -207,7 +207,7 @@ section#sites {
             }
           }
           .wrapper-5 {
-            height: 33%;
+            height: 38%;
             #site-slideshow-code_url-icon {
               @include align-2;
             }
