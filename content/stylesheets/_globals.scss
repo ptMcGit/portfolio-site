@@ -4,6 +4,7 @@ $beige:             #eadfb0;
 $black:             #000000;
 $dark-gray:         #48423f;
 $mid-gray:          #534c48;
+$light-gray:        #aaaaaa;
 $bright-yellow:     #fffb00;
 $faded-maroon:      #563939;
 
@@ -11,6 +12,7 @@ $color-1:           $beige;
 $color-2:           $bright-yellow;
 
 $background-1:      $dark-gray;
+$foreground-1:      $light-gray;
 
 /* Sizes */
 
@@ -19,16 +21,17 @@ $lg-phone-landscape-width: 700px;
 $tablet-portrait-width: 700px;
 $desktop-landscape-width: 1024px;
 
-
 /* Typography */
 
 $sans-serif:        'Bangers', helvetica, sans-serif;
 $sans-serif-2:      helvetica, sans-serif;
-$monospace:         courier, monospace, arial, sans-serif;
+$sans-serif-3:      Arial, sans-serif;
+$monospace:         courier, monospace, Arial, sans-serif;
 
 $font-family-1:     $sans-serif;
 $font-family-2:     $monospace;
 $font-family-3:     $sans-serif-2;
+$font-family-4:     $sans-serif-3;
 
 /* Miscellaneous */
 
