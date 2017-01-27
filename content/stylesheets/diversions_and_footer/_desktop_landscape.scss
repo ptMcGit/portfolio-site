@@ -1,0 +1,20 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $desktop-landscape-width) {
+  section#diversions {
+    header {
+      h2 {
+        font-size: 5vw;
+      }
+    }
+    .fa-5x {
+      font-size: 5em;
+    }
+
+  }
+  footer#main-footer {
+    p {
+      font-size: 1em;
+    }
+  }
+}

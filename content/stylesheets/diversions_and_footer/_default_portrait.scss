@@ -1,0 +1,28 @@
+@media screen
+and (orientation: portrait) {
+  section#diversions {
+    header {
+      height: 18%;
+      h2 {
+        font-size: 15vw;
+      }
+    }
+    .wrapper-1 {
+      height: 40%;
+    }
+    .wrapper-2 {
+      height: 42%;
+      .inner-wrapper {
+        @include align-2;
+      }
+    }
+    .fa-5x {
+      font-size: 4em;
+    }
+  }
+  footer#main-footer {
+    p {
+      font-size: 4vw;
+    }
+  }
+}

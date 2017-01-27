@@ -1,0 +1,18 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $lg-phone-landscape-width) {
+  section#diversions {
+    .wrapper-1 {
+      height: 41%;
+    }
+    .wrapper-2 {
+      height: 36%;
+      .inner-wrapper {
+        @include align-2;
+      }
+    }
+    .fa-5x {
+      font-size: 4em;
+    }
+  }
+}
