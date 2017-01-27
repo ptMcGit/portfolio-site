@@ -8,7 +8,7 @@ header#main-header {
       @include align-3;
       font-size: 17vw;
       text-shadow: $text-shadow-1;
-      border-bottom: 1px dashed;
+      border-bottom: 1px dashed $color-1;
       a {
         color: inherit;
       }
@@ -44,6 +44,7 @@ header#main-header {
         .wrapper-1 {
           #my-name {
             font-size: 5vw;
+            border-bottom: 2px dotted $color-2;
           }
         }
         .wrapper-2 {
@@ -58,9 +59,11 @@ header#main-header {
     }
     @media (orientation: portrait) {
       @media (min-width: $tablet-portrait-width) {
+        border-bottom: 1px solid $color-1;
         .wrapper-1 {
           #my-name {
             font-size: 12vw;
+            border-bottom: 2px dotted $color-2;
           }
         }
         .wrapper-2 {
