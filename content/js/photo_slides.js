@@ -47,3 +47,5 @@ module.exports = [
     {url: "https://c1.staticflickr.com/9/8253/28750939944_ea2b6003d1_o.jpg"},
     {url: "https://c1.staticflickr.com/9/8517/28753102763_cbaff2050a_o.jpg"},
 ];
+
+// add background color attribute i.e. take dominant color and rotate hue 180

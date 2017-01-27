@@ -3,6 +3,6 @@
 (function() {
     var EasyModal = require('easymodal');
 
-    var photoModal = new EasyModal('#photo','#photo-button');
+    var photoModal = new EasyModal('#photo','#photo-button', true);
 
 })();
