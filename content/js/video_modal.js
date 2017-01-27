@@ -3,6 +3,6 @@
 (function(){
     var EasyModal = require('easymodal');
 
-    var videoModal = new EasyModal('#video', '#video-button');
+    var videoModal = new EasyModal('#video', '#video-button', true);
 
 })();
