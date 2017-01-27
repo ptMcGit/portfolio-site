@@ -1,0 +1,26 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $desktop-landscape-width) {
+  section#diversions {
+    #photo-modal-outside {
+      #photo {
+        height: 660px;
+        width: 900px;
+      }
+      #photo-modal-close {
+        height: 40px;
+        display: block;
+        text-align:right;
+        float: initial;
+        font-size: 50px;
+      }
+      #photo-box {
+        height: 550px;
+      }
+      #flickr-link {
+        height: 70px;
+        font-size: 16px;
+      }
+    }
+  }
+}

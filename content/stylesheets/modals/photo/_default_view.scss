@@ -1,0 +1,50 @@
+@media screen {
+  section#diversions {
+    #photo-modal-outside {
+      #photo {
+        background: transparent;
+        border: initial;
+        padding: 0;
+        height: 100%;
+        width: 90%;
+      }
+      #photo-modal-transparency {
+        background: black;
+        opacity: 0.8;
+        background-color: rgba(0,0,0,0.8);
+      }
+      #photo-modal-close {
+        height: 10%;
+        display: block;
+        text-align:right;
+        float: initial;
+        font-weight: bold;
+      }
+      #photo-box {
+        height: 80%;
+      }
+      #flickr-link {
+        height: 10%;
+        font-size: 1vw;
+      }
+      #photo-slideshow-prev-button {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 13%;
+      }
+      #photo-slideshow-next-button {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 13%;
+      }
+      #photo-slideshow-url {
+        display: inline-block;
+        max-width: 71%;
+        max-height: 98%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

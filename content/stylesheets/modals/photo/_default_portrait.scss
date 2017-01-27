@@ -1,0 +1,26 @@
+@media screen
+and (orientation: portrait) {
+  section#diversions {
+    #photo-modal-outside {
+      .fa-4x {
+        font-size: 2em;
+      }
+      #photo-modal-close {
+        height: 20%;
+      }
+      #photo-box {
+        height: 60%;
+      }
+      #flickr-link {
+        height: 20%;
+        font-size: 6vw;
+      }
+      #photo {
+        width: 100%;
+      }
+      #photo-slideshow-url {
+        max-width: 70%;
+      }
+    }
+  }
+}
