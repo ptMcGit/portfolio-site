@@ -6,6 +6,7 @@ section#sites {
     h2 {
       @include align-3;
       font-size: 18vw;
+      text-shadow: $text-shadow-1;
     }
   }
   #site-box {
@@ -30,9 +31,11 @@ section#sites {
     }
     #site-slideshow-next-button {
       @include button;
+      text-shadow: $text-shadow-1;
     }
     #site-slideshow-prev-button {
       @include button;
+      text-shadow: $text-shadow-1;
     }
   }
   #site-description {
