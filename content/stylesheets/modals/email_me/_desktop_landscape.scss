@@ -1,0 +1,25 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $desktop-landscape-width) {
+  nav#main-nav {
+    #email-me-modal-outside {
+
+      #email-me-modal-close {
+        font-size: 28px;
+        top: 172px;
+        right: 32%;
+      }
+      #email-me {
+        width: 238px;
+        margin-top: 15%;
+        padding: 53px;
+        p {
+          font-size: 21px;
+        }
+        a {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}

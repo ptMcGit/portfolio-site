@@ -10,7 +10,11 @@
 @import "modals/about_me/tablet_portrait";
 @import "modals/about_me/desktop_landscape";
 
-@import "modals/email_me";
+@import "modals/email_me/default_view";
+@import "modals/email_me/default_landscape";
+@import "modals/email_me/tablet_portrait";
+@import "modals/email_me/desktop_landscape";
+
 @import "modals/photo";
 @import "modals/video";
 
