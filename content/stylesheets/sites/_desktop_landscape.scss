@@ -1,0 +1,42 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $desktop-landscape-width) {
+  section#sites {
+    header {
+      height: 20%;
+      h1 {
+        @include align-3;
+      }
+    }
+    #site-box {
+      height: 35%;
+      width: 40%;
+    }
+    #site-description {
+      height: 45%;
+      .wrapper-2 {
+        #site-slideshow-tech_desc {
+          font-size: 2.5vw;
+          .large-bracket {
+            font-size: 4vw;
+          }
+        }
+      }
+      .wrapper-3 {
+        #site-slideshow-short_desc {
+          font-size: 2.1vw;
+        }
+      }
+      .wrapper-4 {
+        #site-slideshow-work_desc {
+          line-height: 2.2vw;
+        }
+      }
+      .wrapper-5 {
+        .fa-4x {
+          font-size: 4em;
+        }
+      }
+    }
+  }
+}

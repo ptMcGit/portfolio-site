@@ -1,0 +1,43 @@
+@media screen
+and (orientation: portrait)
+and (min-width: $lg-phone-portrait-width) {
+  section#sites {
+    header {
+      height: 20%;
+    }
+    #site-box {
+      height: 31%;
+    }
+    #site-description {
+      height: 49%;
+      .wrapper-2 {
+        height: 18%;
+        #site-slideshow-short_desc {
+          font-size: 6.9vw;
+        }
+        .large-bracket {
+          font-size: 10vw;
+        }
+      }
+      .wrapper-3 {
+        height: 15%;
+      }
+      .wrapper-4 {
+        @include alignment-wrapper-1;
+        height: 29%;
+        max-width: 72%;
+        #site-slideshow-work_desc {
+          @include align-2;
+          text-align: left;
+          font-size:4.1vw;
+        }
+      }
+      .wrapper-5 {
+        height: 38%;
+        #site-slideshow-code_url-icon {
+          @include align-2;
+        }
+      }
+    }
+  }
+}

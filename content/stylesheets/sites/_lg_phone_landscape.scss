@@ -1,0 +1,28 @@
+section#sites {
+  @media screen
+  and (orientation: landscape)
+  and (min-width: $lg-phone-landscape-width) {
+    #site-box {
+      width: 48%;
+    }
+    #site-description {
+      .wrapper-2 {
+        height: 20%;
+      }
+      .wrapper-3 {
+        height: 15%;
+      }
+      .wrapper-4 {
+        @include alignment-wrapper-1;
+        height: 30%;
+        #site-slideshow-work_desc {
+          @include align-2;
+          line-height: 3vw;
+        }
+      }
+      .wrapper-5 {
+        height: 35%;
+      }
+    }
+  }
+}

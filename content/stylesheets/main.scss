@@ -15,7 +15,12 @@
 @import "top/tablet_portrait";
 @import "top/desktop_landscape";
 
-@import "sites/sites";
+@import "sites/default_view";
+@import "sites/default_landscape";
+@import "sites/lg_phone_portrait";
+@import "sites/lg_phone_landscape";
+@import "sites/tablet_portrait";
+@import "sites/desktop_landscape";
 
 @import "diversions_and_footer/diversions";
 @import "diversions_and_footer/footer";

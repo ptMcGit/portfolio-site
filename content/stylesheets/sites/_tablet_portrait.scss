@@ -1,0 +1,44 @@
+@media screen
+and (orientation: portrait)
+and (min-width: $tablet-portrait-width) {
+  section#sites {
+    header {
+      height: 20%;
+      h2 {
+        @include align-3;
+        font-size: 14vw;
+      }
+    }
+    #site-box {
+      height: 22%;
+    }
+    #site-description {
+      height: 58%;
+      .fa-4x {
+        font-size: 4em;
+      }
+      .wrapper-2 {
+        height: 15%;
+      }
+      .wrapper-3 {
+        height: 14%;
+        #site-slideshow-short_desc {
+          font-size: 3.5vw;
+        }
+      }
+      .wrapper-4 {
+        height: 27%;
+        #site-slideshow-work_desc {
+          font-size: 3.2vw;
+          line-height: 5vw;
+        }
+      }
+      .wrapper-5 {
+        height: 44%;
+        #site-slideshow-code_url-icon {
+          @include align-2;
+        }
+      }
+    }
+  }
+}

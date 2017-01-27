@@ -1,0 +1,50 @@
+section#sites {
+  @media screen
+  and (orientation: landscape) {
+    header {
+      height: 15%;
+      h2 {
+        font-size: 6vw;
+      }
+    }
+    #site-box {
+      height: 40%;
+      width: 52%;
+      $padding: 45%;
+      #site-slideshow-prev-button {
+        padding-right: $padding;
+      }
+      #site-slideshow-next-button {
+        padding-left: $padding;
+      }
+    }
+    #site-description {
+      height: 45%;
+      .wrapper-2 {
+        height: 25%;
+        #site-slideshow-tech_desc {
+          font-size: 3.5vw;
+        }
+        .large-bracket {
+          font-size: 5vw;
+        }
+      }
+      .wrapper-3 {
+        height: 29%;
+        #site-slideshow-short_desc {
+          padding-bottom: 0%;
+          font-size: 2.7vw;
+        }
+      }
+      .wrapper-5 {
+        height: 56%;
+        .fa-4x {
+          font-size: 3em;
+        }
+        #site-slideshow-code_url-icon {
+          @include align-2;
+        }
+      }
+    }
+  }
+}

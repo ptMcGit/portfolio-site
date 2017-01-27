@@ -1,0 +1,91 @@
+@media screen {
+  section#sites {
+    text-align: center;
+    header {
+      @include alignment-wrapper-1;
+      height: 15%;
+      h2 {
+        @include align-3;
+        font-size: 18vw;
+        text-shadow: $text-shadow-1;
+      }
+    }
+    #site-box {
+      height: 40%;
+      @include alignment-wrapper-1;
+      #site-slideshow-site_url {
+        @include align-1;
+        height: 100%;
+        width: auto;
+        #site-slideshow-img_url {
+          box-shadow:     8px 8px 15px $black;
+          border-radius:  100%;
+          max-width:      100%;
+          height:         auto;
+        }
+      }
+      @mixin button {
+        @include button_as_link;
+        @include align-1;
+        height: 100%;
+        width: auto;
+      }
+      #site-slideshow-next-button {
+        @include button;
+        text-shadow: $text-shadow-1;
+      }
+      #site-slideshow-prev-button {
+        @include button;
+        text-shadow: $text-shadow-1;
+      }
+    }
+    #site-description {
+      height: 45%;
+      .wrapper-1 {
+        @include alignment-wrapper-1;
+        height: 0%;
+        #site-slideshow-code_url {
+          @include align-1;
+          display: none;
+        }
+      }
+      .wrapper-2 {
+        @include alignment-wrapper-1;
+        height: 25%;
+        .large-bracket {
+          @include align-1;
+          font-size: 7vw;
+        }
+        #site-slideshow-tech_desc {
+          @include align-1;
+          font-size: 4.9vw;
+        }
+      }
+      .wrapper-3 {
+        @include alignment-wrapper-1;
+        height: 15%;
+        max-width: 83%;
+        #site-slideshow-short_desc {
+          @include align-1;
+          font-size: 4.5vw;
+        }
+      }
+      .wrapper-4 {
+        @include alignment-wrapper-1;
+        display: none;
+        height: 0%;
+        #site-slideshow-work_desc {
+          @include align-1;
+          text-align: left;
+        }
+      }
+      .wrapper-5 {
+        @include alignment-wrapper-1;
+        height: 60%;
+        #site-slideshow-code_url-icon {
+          @include align-1;
+        }
+      }
+    }
+  }
+}
