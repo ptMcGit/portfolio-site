@@ -3,52 +3,68 @@ section#diversions {
     padding: 0;
     height: 100%;
     width: 90%;
+    background:$background-2;
+    border-color: $color-3;
   }
   #video-modal-close {
+    color: $color-1;
     height: 8%;
     display: block;
     text-align:right;
     float: initial;
     font-weight: bold;
+    background: $background-2;
   }
   #video-box {
     height: 75%;
+    background: $background-2;
   }
   #video-slideshow-title {
     height: 7%;
     font-size: 4vw;
+    font-family: $font-family-1;
+    text-shadow: $text-shadow-1;
+    background: $color-3;
   }
   #video-slideshow-description {
     height: 5%;
     font-size: 5vw;
     display: none;
+    background: $background-2;
   }
   #youtube-link {
     font-size: 1vw;
     height: 10%;
+    background: $background-2;
   }
   #video-slideshow-tech-description {
     height: 5%;
     font-size: 5vw;
     display: none;
+    background: $background-2;
   }
   #video-slideshow-prev-button {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
     width: 13%;
+    text-shadow: $text-shadow-1;
+    background: $background-2;
   }
   #video-slideshow-next-button {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
     width: 13%;
+    text-shadow: $text-shadow-1;
+    background: $background-2;
   }
   #video-slideshow-iframe {
     display: inline-block;
     max-width: 71%;
     max-height: 98%;
     vertical-align: middle;
+    background: $background-2;
   }
 }
 
@@ -92,6 +108,7 @@ section#diversions {
     #youtube-link {
       height: 23%;
       font-size: 7vw;
+      text-shadow: $text-shadow-1;
     }
     #video {
       width: 100%;
