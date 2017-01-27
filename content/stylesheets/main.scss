@@ -3,6 +3,11 @@
 @import "foundation";
 @import "mixins";
 
+@import "modals/modal_defaults";
+@import "modals/about_me";
+@import "modals/email_me";
+@import "modals/video";
+
 @import "main_layout/main_layout";
 @import "main_layout/header";
 @import "main_layout/nav_1";
