@@ -1,20 +1,32 @@
 /* Colors */
 
-$beige:             #eadfb0;
-$black:             #000000;
-$dark-gray:         #48423f;
-$mid-gray:          #534c48;
+/* tints */
+
 $light-gray:        #aaaaaa;
-$bright-yellow:     #fffb00;
+$mid-gray:          #534c48;
 $faded-maroon:      #563939;
+
+/* tones */
+
+$middle-red:        #c22121;
+$bright-yellow:     #fffb00;
+$beige:             #eadfb0;
+
+/* shades */
+
+$dark-gray:         #48423f;
+$black:             #000000;
 
 $color-1:           $beige;
 $color-2:           $bright-yellow;
+$color-3:           $middle-red;
 
 $background-1:      $dark-gray;
+$background-2:      $black;
 $foreground-1:      $light-gray;
 
-$shade-1: #c22121;
+
+$shade-1: $middle-red;
 $shade-2: #a40d0d;
 $shade-3: #7b1515;
 
