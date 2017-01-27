@@ -29,6 +29,26 @@ nav#main-nav {
           }
         }
       }
+      .fa-linkedin-square {
+        color:          #07a4b7;
+        text-shadow:    $text-shadow-1;
+      }
+      .fa-envelope-o {
+        @include        button_as_link;
+        display:        inline;
+        color:          #ec5358;
+        text-shadow:    $text-shadow-1;
+      }
+
+      .fa-github-square {
+        color:          #91f32d;
+        text-shadow:    $text-shadow-1;
+      }
+
+      .fa-file-text {
+        color:          $beige;
+        text-shadow:    $text-shadow-1;
+      }
     }
   }
 }

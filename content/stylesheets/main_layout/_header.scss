@@ -7,6 +7,8 @@ header#main-header {
     #my-name {
       @include align-3;
       font-size: 17vw;
+      text-shadow: $text-shadow-1;
+      border-bottom: 1px dashed;
       a {
         color: inherit;
       }
