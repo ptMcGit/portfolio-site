@@ -1,0 +1,126 @@
+$main-header-height: 30vh;
+$main-nav-height: 70vh;
+
+@media screen {
+  header#main-header {
+    height: $main-header-height;
+    text-align: center;
+    color: $color-2;
+    .wrapper-1 {
+      height: 75%;
+      @include alignment-wrapper-1;
+    }
+    #my-name {
+      @include align-3;
+      font-size: 17vw;
+      text-shadow: $text-shadow-1;
+      border-bottom: 1px dashed $color-1;
+      a {
+        color: $color-2;
+      }
+    }
+    .wrapper-2 {
+      @include alignment-wrapper-1;
+      height: 25%;
+    }
+    #occupational-description {
+      @include align-1;
+      font-size: 3.5vw;
+      font-family:  $font-family-2;
+    }
+    .large-bracket {
+      font-size: 5vw;
+    }
+  }
+
+  nav#main-nav {
+    height: $main-nav-height;
+    $nav-1-height: 54%;
+    $nav-2-height: 46%;
+    #nav-1 {
+      @include alignment-wrapper-1;
+      height: $nav-1-height;
+      width: 69%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 4.6vw;
+      #icon-buttons {
+        @include align-1;
+      }
+      .button-and-text {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+      }
+      .icon-wrapper {
+        display: block;
+      }
+      .text-wrapper {
+        display: block;
+        p {
+          margin: 0;
+        }
+      }
+      .fa-linkedin-square {
+        color:          #07a4b7;
+        text-shadow:    $text-shadow-1;
+      }
+      .fa-file-text {
+        color:          $beige;
+        text-shadow:    $text-shadow-1;
+      }
+      .fa-envelope-o {
+        color:          #ec5358;
+        text-shadow:    $text-shadow-1;
+      }
+      #email-button {
+        @include        button_as_link;
+        display:        inline;
+        padding-bottom: 2.5%;
+        color:          #ec5358;
+      }
+      .fa-github-square {
+        color:          #91f32d;
+        text-shadow:    $text-shadow-1;
+      }
+    }
+    #nav-2 {
+      height: $nav-2-height;
+      font-style: $font-family-1;
+      font-size: 5.7vw;
+      text-align: center;
+      #about-me-button {
+        @include button_as_link;
+        height: 33%;
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+      }
+      #about-me-button {
+        background: $shade-1;
+        border-radius: 24% 1% 1% 1%;
+      }
+      @mixin link {
+        display: block;
+        line-height: 10vh;
+        height: 33%;
+        width: 100%
+      }
+      #sites-link {
+        @include link;
+        background: $shade-2;
+      }
+      #diversions-link {
+        @include link;
+        background: $shade-3;
+      }
+    }
+  }
+
+  #top-link {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+  }
+}

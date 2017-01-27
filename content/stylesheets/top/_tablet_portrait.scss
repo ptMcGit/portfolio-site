@@ -1,0 +1,46 @@
+@media screen
+and (orientation: portrait)
+and (min-width: $tablet-portrait-width) {
+  header#main-header {
+    border-bottom: 1px solid $color-1;
+    .wrapper-1 {
+      #my-name {
+        font-size: 12vw;
+        border-bottom: 2px dotted $color-2;
+      }
+    }
+    .wrapper-2 {
+      #occupational-description {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  nav#main-nav {
+    #nav-1 {
+      font-size: 3.3vw;
+      height: 26%;
+      width: 86%;
+      #icon-buttons {
+        .button-and-text {
+          width: 19%;
+        }
+      }
+    }
+    #nav-2 {
+      font-size: 4.5vw;
+      height: 33%;
+      a {
+        line-height: 8vw;
+      }
+      #about-me-button {
+        background: none;
+      }
+      #sites-link {
+        background: none;
+      }
+      #diversions-link {
+        background: none;
+      }
+    }
+  }
+}

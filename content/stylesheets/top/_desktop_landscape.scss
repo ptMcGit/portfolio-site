@@ -1,0 +1,46 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $desktop-landscape-width) {
+  header#main-header {
+            .wrapper-1 {
+          #my-name {
+            font-size: 5vw;
+            border-bottom: 2px dotted $color-2;
+          }
+        }
+        .wrapper-2 {
+          #occupational-description {
+            font-size: 1.2vw;
+          }
+          .large-bracket {
+            font-size: 2vw;
+          }
+        }
+  }
+  nav#main-nav {
+    #nav-1 {
+      font-size: 1.9vw;
+      height: 30%;
+      #icon-buttons {
+        .button-and-text {
+          width: 13%;
+          height: 24%;
+              padding-bottom: 0%;
+              padding-top: 2%;
+        }
+      }
+    }
+    #nav-2 {
+      height: 34%;
+      #about-me-button {
+        background: none;
+      }
+      #sites-link {
+        background: none;
+      }
+      #diversions-link {
+        background: none;
+      }
+    }
+  }
+}
