@@ -1,0 +1,23 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $tablet-portrait-width) {
+  nav#main-nav {
+    #about-me-modal-outside {
+
+      #about-me {
+        width: 75%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+      }
+      .about-me-copy {
+        padding-left: 4%;
+        padding-right: 4%;
+        text-indent: 7vw;
+        font-size: 3.5vw;
+      }
+      #about-me-modal-close {
+        font-size: 6vw;
+      }
+    }
+  }
+}

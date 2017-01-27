@@ -1,0 +1,24 @@
+@media screen
+and (orientation: portrait) {
+  nav#main-nav {
+    #about-me-modal-outside {
+      #about-me {
+        width: 87%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      .about-me-copy {
+        font-size: 5.5vw;
+        text-indent: 8vw;
+        line-height: 6.6vw;
+        padding-bottom: 6%;
+        &:first-of-type {
+          padding-top: 13%;
+        }
+      }
+      #about-me-modal-close {
+        font-size: 9vw;
+      }
+    }
+  }
+}

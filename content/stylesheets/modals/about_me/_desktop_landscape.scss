@@ -1,0 +1,25 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $desktop-landscape-width) {
+  nav#main-nav {
+    #about-me-modal-outside {
+      #about-me {
+        width: 700px;
+        margin-top: 56px;
+      }
+      #about-me-modal-close {
+        right: 150px;
+        font-size: 2.2em;
+      }
+      .about-me-copy {
+        font-size: 1.6em;
+        line-height: 1.6em;
+        padding-right: 20px;
+        padding-left: 20px;
+        &:first-of-type {
+          padding-top: 64px;
+        }
+      }
+    }
+  }
+}

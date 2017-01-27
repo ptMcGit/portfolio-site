@@ -1,0 +1,38 @@
+@media screen {
+  nav#main-nav {
+    #about-me-modal-outside {
+      #about-me {
+        width: 75%;
+        margin-top: 3%;
+        margin-bottom: 10%;
+      }
+      .about-me-copy {
+        font-size: 4.5vw;
+        font-family: $font-family-4;
+        color: $color-1;
+        line-height: 5.6vw;
+        text-align: left;
+        text-indent: 8vw;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 3%;
+        &:first-of-type {
+          padding-top: 10%;
+        }
+      }
+      #about-me-modal-close {
+        font-family: $font-family-4;
+        display: block;
+        float: initial;
+        font-size: 7vw;
+        font-weight: bold;
+        text-align: right;
+        color: $foreground-1;
+        position: fixed;
+        right: 10%;
+        border: 1px solid $foreground-1;
+        background: $background-1;
+      }
+    }
+  }
+}
