@@ -1,12 +1,24 @@
 section#diversions {
   text-align: center;
   header {
-    height: 23%;
     @include alignment-wrapper-1;
+    height: 23%;
     h2 {
-      font-size: 7vw;
       @include align-3;
+      font-size: 7vw;
+      text-shadow: $text-shadow-1;
     }
+  }
+  h3 {
+    font-family: $font-family-3;
+  }
+  .fa-camera {
+    color:          #1f1818;
+    text-shadow:    2px 2px 2px #2d2d2d;
+  }
+  .fa-video-camera {
+    color:          #575b5f;
+    text-shadow:    $text-shadow-1;
   }
   button {
     @include button_as_link;
@@ -15,15 +27,15 @@ section#diversions {
     font-size: 3em;
   }
   .wrapper-1 {
-    height: 42%;
     @include alignment-wrapper-1;
+    height: 42%;
     .inner-wrapper {
       @include align-1;
     }
   }
   .wrapper-2 {
-    height: 35%;
     @include alignment-wrapper-1;
+    height: 35%;
     .inner-wrapper {
       @include align-1;
     }
