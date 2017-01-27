@@ -55,11 +55,3 @@ $text-shadow-1:     2px 2px 2px $black;
 
 $border-1:          2px dotted $color-2;
 $text-shadow-1:     2px 2px 2px $black;
-
-@mixin button_as_link {
-    background: none;
-    color:      inherit;
-    border:     none;
-    outline:    transparent;
-    cursor:     pointer;
-}

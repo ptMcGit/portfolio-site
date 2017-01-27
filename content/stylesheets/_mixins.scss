@@ -29,3 +29,10 @@
   display: table-cell;
   vertical-align: bottom;
 }
+
+@mixin button_as_link {
+    background: none;
+    border:     none;
+    outline:    transparent;
+    cursor:     pointer;
+}
