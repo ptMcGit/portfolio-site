@@ -1,0 +1,41 @@
+@media screen
+and (orientation: portrait)
+and (min-width: $tablet-portrait-width) {
+  section#diversions {
+    #video-modal-outside {
+      #video-slideshow-prev-button {
+        width: 6%;
+      }
+      #video-slideshow-next-button {
+        width: 6%;
+      }
+      .fa-4x {
+        font-size: 4em
+      }
+      #youtube-link {
+        height: 25%;
+      }
+      #video-box {
+        height: 41%;
+      }
+      #video-slideshow-description {
+        font-size: 3.5vw;
+        height: 7%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #video-slideshow-tech-description {
+        height: 5%;
+        font-size: 2.5vw;
+      }
+      #video-slideshow-iframe {
+        max-width: 82%;
+        max-height: 85%;
+      }
+      #youtube-link {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}
