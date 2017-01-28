@@ -4,41 +4,61 @@ and (min-width: $tablet-portrait-width) {
   header#main-header {
     border-bottom: 1px solid $color-1;
     .wrapper-1 {
-      #my-name {
-        font-size: 12vw;
-        border-bottom: 2px dotted $color-2;
-      }
+      height: 87%;
+    }
+    #my-name {
+      font-size: 9.4vh;
+      border-bottom: 1px solid $color-1;
+      padding: 1%;
     }
     .wrapper-2 {
-      #occupational-description {
-        font-size: 2.5vw;
-      }
+      height: 8%;
+    }
+    #occupational-description {
+      @include align-1;
+      height: 13%;
+      padding-top: 1%;
+      font-size: 1.8vh;
     }
   }
   nav#main-nav {
     #nav-1 {
-      font-size: 3.3vw;
+      font-size: 2vh;
       height: 26%;
-      width: 86%;
+      width: 73%;
       #icon-buttons {
-        .button-and-text {
-          width: 19%;
-        }
+      }
+      .button-and-text {
+        width: 19%;
       }
     }
     #nav-2 {
-      font-size: 4.5vw;
-      height: 33%;
-      a {
-        line-height: 8vw;
+      font-size: 3.2vh;
+      height: 74%;
+      text-transform: none;
+      background: $color-4;
+      background: linear-gradient(to top, $color-4, $color-4, $color-4, $background-1, $background-1, $background-1);
+      @mixin sLs {
+        letter-spacing: .7vh;
+        text-shadow: $text-shadow-1;
+        border-bottom: 1px solid $color-1;
+      }
+      .nav-2-item-wrapper {
+        background: $color-4;
+        /* total height is short of 100% */
+        height: 20%;
       }
       #about-me-button {
-        background: none;
+        @include sLs;
+        background: $color-4;
+        height: 20%;
       }
       #sites-link {
+        @include sLs;
         background: none;
       }
       #diversions-link {
+        @include sLs;
         background: none;
       }
     }

@@ -2,37 +2,54 @@
 and (orientation: landscape)
 and (min-width: $desktop-landscape-width) {
   header#main-header {
-            .wrapper-1 {
-          #my-name {
-            font-size: 5vw;
-            border-bottom: 2px dotted $color-2;
-          }
-        }
-        .wrapper-2 {
-          #occupational-description {
-            font-size: 1.2vw;
-          }
-          .large-bracket {
-            font-size: 2vw;
-          }
-        }
+    height: 30vh;
+    #mn-wrapper {
+      height: 202px;
+    }
+    #my-name {
+      font-size: 77px;
+      border-bottom: 2px dotted $color-2;
+    }
+    #od-wrapper {
+      @include alignment-wrapper-1;
+      height: 28px;
+    }
+    #occupational-description {
+      font-size: 15px;
+    }
+    .large-bracket {
+      font-size: 26px;
+    }
   }
   nav#main-nav {
+    height: 70vh;
     #nav-1 {
-      font-size: 1.9vw;
-      height: 30%;
+      font-size: 20px;
+      height: 146px;
+      width: 775px;
+      margin-top: -9px;
       #icon-buttons {
-        .button-and-text {
-          width: 13%;
-          height: 24%;
-              padding-bottom: 0%;
-              padding-top: 2%;
-        }
+      }
+      .button-and-text {
+        width: 13%;
+        height: 24%;
+        padding-bottom: 0%;
+        padding-top: 2%;
       }
     }
     #nav-2 {
-      height: 34%;
+      /* original calc on 662px i.e. this would be 284px */
+      height: 250px;
+      font-size: 37px;
+      letter-spacing: 4.2px;
+      .nav-2-item-wrapper {
+        text-transform: none;
+        /* does not add up to 100% */
+        height: 20%;
+      }
       #about-me-button {
+        text-transform: none;
+        height: 20%;
         background: none;
       }
       #sites-link {

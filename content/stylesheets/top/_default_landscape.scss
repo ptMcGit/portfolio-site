@@ -1,25 +1,27 @@
 @media screen
 and (orientation: landscape) {
   header#main-header {
+    height: 15vh;
     .wrapper-1 {
-      #my-name {
-        font-size: 10vw;
-      }
+    }
+    #my-name {
+      font-size: 12.5vh;
+      padding: 0;
     }
     .wrapper-2 {
-      #occupational-description {
-        font-size: 2.5vw;
-      }
+    }
+    #occupational-description {
     }
   }
   nav#main-nav {
+    height: 85vh;
     #nav-1 {
       height: 47%;
       font-size: 2.9vw;
       #icon-buttons {
-        .button-and-text {
-          width: 23%;
-        }
+      }
+      .button-and-text {
+        width: 23%;
       }
     }
     #nav-2 {
