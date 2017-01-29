@@ -3,89 +3,98 @@
     text-align: center;
     header {
       @include alignment-wrapper-1;
-      height: 15%;
+      height: 19%;
       h2 {
         @include align-3;
-        font-size: 18vw;
+        font-size: 12vh;
         text-shadow: $text-shadow-1;
       }
     }
     #site-box {
       height: 40%;
       @include alignment-wrapper-1;
-      #site-slideshow-site_url {
-        @include align-1;
-        height: 100%;
-        width: auto;
-        #site-slideshow-img_url {
-          box-shadow:     8px 8px 15px $black;
-          border-radius:  100%;
-          max-width:      100%;
-          height:         auto;
-        }
-      }
-      @mixin button {
-        @include button_as_link;
-        @include align-1;
-        height: 100%;
-        width: auto;
-      }
-      #site-slideshow-next-button {
-        @include button;
-        text-shadow: $text-shadow-1;
-      }
-      #site-slideshow-prev-button {
-        @include button;
-        text-shadow: $text-shadow-1;
-      }
+    }
+    @mixin button {
+      @include button_as_link;
+      @include align-1;
+      font-size: 10vh;
+      height: 100%;
+      width: auto;
+    }
+    #site-slideshow-prev-button {
+      @include button;
+      text-shadow: $text-shadow-1;
+    }
+    #site-slideshow-site_url {
+      @include align-1;
+      height: 100%;
+      width: auto;
+    }
+    #site-slideshow-img_url {
+      box-shadow:     8px 8px 15px $black;
+      border-radius:  100%;
+      max-width:      100%;
+      height:         auto;
+    }
+    #site-slideshow-next-button {
+      @include button;
+      text-shadow: $text-shadow-1;
     }
     #site-description {
-      height: 45%;
-      .wrapper-1 {
-        @include alignment-wrapper-1;
-        height: 0%;
-        #site-slideshow-code_url {
-          @include align-1;
-          display: none;
-        }
-      }
-      .wrapper-2 {
-        @include alignment-wrapper-1;
-        height: 25%;
-        .large-bracket {
-          @include align-1;
-          font-size: 7vw;
-        }
-        #site-slideshow-tech_desc {
-          @include align-1;
-          font-size: 4.9vw;
-        }
-      }
-      .wrapper-3 {
-        @include alignment-wrapper-1;
-        height: 15%;
-        max-width: 83%;
-        #site-slideshow-short_desc {
-          @include align-1;
-          font-size: 4.5vw;
-        }
-      }
-      .wrapper-4 {
-        @include alignment-wrapper-1;
-        display: none;
-        height: 0%;
-        #site-slideshow-work_desc {
-          @include align-1;
-          text-align: left;
-        }
-      }
-      .wrapper-5 {
-        @include alignment-wrapper-1;
-        height: 60%;
-        #site-slideshow-code_url-icon {
-          @include align-1;
-        }
-      }
+      height: 41%;
+      background: $color-1;
+      border-top: 4px solid $color-1;
+    }
+    #sstd-backing {
+      background: $color-5;
+      height: 18%;
+    }
+    #sstd-wrapper {
+      @include alignment-wrapper-1;
+      height: 100%;
+    }
+    .large-bracket {
+      @include align-1;
+      font-size: 4.5vh;
+    }
+    #l-bracket {
+      text-align: right;
+    }
+    #r-bracket {
+      text-align: left;
+    }
+    #site-slideshow-tech_desc {
+      @include align-1;
+      font-size: 2.9vh;
+    }
+    #sssd-wrapper {
+      @include alignment-wrapper-1;
+      height: 33%;
+      max-width: 83%;
+    }
+    #site-slideshow-short_desc {
+      @include align-1;
+      font-size: 2.8vh;
+      line-height: 4vh;
+      color: $color-5;
+    }
+    #sswd-wrapper {
+      @include alignment-wrapper-1;
+      display: none;
+      height: 0%;
+    }
+    #site-slideshow-work_desc {
+      @include align-1;
+      text-align: left;
+    }
+    #sscui-wrapper {
+      @include alignment-wrapper-1;
+      /* account for border at top */
+      height: 41%;
+    }
+    #site-slideshow-code_url-icon {
+      @include align-2;
+      color: $color-5;
     }
   }
 }

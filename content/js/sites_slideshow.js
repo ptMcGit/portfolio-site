@@ -27,7 +27,7 @@
     );
 
     siteCollection.bindElement(
-        [document.getElementById("site-slideshow-code_url")],
+        [document.getElementById("site-slideshow-code_url-icon")],
         'href',
         'code_url'
     );

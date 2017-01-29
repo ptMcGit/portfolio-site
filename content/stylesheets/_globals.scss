@@ -7,22 +7,30 @@ $light-mid-gray:    #59514d;
 $light-mid-gray-2:  #7a756b;
 $mid-gray:          #534c48;
 $faded-maroon:      #563939;
+$light-beige:       #f3eed8;
 
 /* tones */
 
 $middle-red:        #c22121;
+$mid-brown:         #A26E4E;
 $bright-yellow:     #fffb00;
 $beige:             #eadfb0;
+$brown:             #66432D;
 
 /* shades */
 
 $dark-gray:         #48423f;
+$dark-brown:        #362418;
 $black:             #000000;
 
 $color-1:           $beige;
 $color-2:           $bright-yellow;
 $color-3:           $middle-red;
 $color-4:           $light-mid-gray;
+$color-5:           $brown;
+$color-6:           $light-beige;
+$color-7:           $mid-brown;
+$color-8:           $dark-brown;
 
 $background-1:      $dark-gray;
 $background-2:      $black;
@@ -53,8 +61,8 @@ $font-family-3:     $sans-serif-2;
 $font-family-4:     $sans-serif-3;
 
 $text-shadow-1:     2px 2px 2px $black;
+$text-shadow-2:     2px 2px 0px $black;
 
 /* Miscellaneous */
 
 $border-1:          2px dotted $color-2;
-$text-shadow-1:     2px 2px 2px $black;

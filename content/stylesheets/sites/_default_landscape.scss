@@ -4,47 +4,59 @@ section#sites {
     header {
       height: 15%;
       h2 {
-        font-size: 6vw;
+        @include align-1;
+        font-size: 10.5vh;
       }
     }
     #site-box {
-      height: 40%;
-      width: 52%;
+      height: 50%;
+      width: 50%;
       $padding: 45%;
-      #site-slideshow-prev-button {
-        padding-right: $padding;
-      }
-      #site-slideshow-next-button {
-        padding-left: $padding;
-      }
+    }
+    #site-slideshow-prev-button {
+      font-size: 15vh;
+    }
+    #site-slideshow-img_url {
+      width: auto;
+      max-height: 50vh
+    }
+    #site-slideshow-next-button {
+      font-size: 15vh;
     }
     #site-description {
-      height: 45%;
-      .wrapper-2 {
-        height: 25%;
-        #site-slideshow-tech_desc {
-          font-size: 3.5vw;
-        }
-        .large-bracket {
-          font-size: 5vw;
-        }
-      }
-      .wrapper-3 {
-        height: 29%;
-        #site-slideshow-short_desc {
-          padding-bottom: 0%;
-          font-size: 2.7vw;
-        }
-      }
-      .wrapper-5 {
-        height: 56%;
-        .fa-4x {
-          font-size: 3em;
-        }
-        #site-slideshow-code_url-icon {
-          @include align-2;
-        }
-      }
+      height: 35%;
+      border: 1px solid $color-6;
+    }
+    #sstd-backing {
+      background: $color-1;
+      height: 26%;
+    }
+    #sstd-wrapper {
+    }
+    #site-slideshow-tech_desc {
+      @include align-3;
+      font-size: 5.5vh;
+      color: $color-5;
+    }
+    .large-bracket {
+      display: none;
+      //@include align-3;
+      //color: $color-5;
+      //font-size: 8vh;
+    }
+    #sssd-wrapper {
+      height: 25%;
+    }
+    #site-slideshow-short_desc {
+      padding-bottom: 0%;
+      font-size: 4.3vh;
+    }
+    #sscui-wrapper {
+      height: 49%;
+    }
+    #site-slideshow-code_url-icon {
+      @include align-2;
+      font-size: 12.7vh
     }
   }
 }

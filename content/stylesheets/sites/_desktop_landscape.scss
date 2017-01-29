@@ -3,40 +3,63 @@ and (orientation: landscape)
 and (min-width: $desktop-landscape-width) {
   section#sites {
     header {
-      height: 20%;
+      height: 102px;
       h1 {
         @include align-3;
+        font-size: 88px;
       }
     }
     #site-box {
-      height: 35%;
-      width: 40%;
+      height: 230px;
+      width: 421px;
+    }
+    #site-slideshow-prev-button {
+      font-size: 77px;
+    }
+    #site-slideshow-site_url {
+      width: 230px;
+    }
+    #site-slideshow-img_url {
+    }
+    #site-slideshow-next-button {
+      font-size: 77px;
     }
     #site-description {
-      height: 45%;
-      .wrapper-2 {
-        #site-slideshow-tech_desc {
-          font-size: 2.5vw;
-          .large-bracket {
-            font-size: 4vw;
-          }
-        }
-      }
-      .wrapper-3 {
-        #site-slideshow-short_desc {
-          font-size: 2.1vw;
-        }
-      }
-      .wrapper-4 {
-        #site-slideshow-work_desc {
-          line-height: 2.2vw;
-        }
-      }
-      .wrapper-5 {
-        .fa-4x {
-          font-size: 4em;
-        }
-      }
+      height: 330px;
+    }
+    #sstd-backing {
+      height: 20%;
+    }
+    #sstd-wrapper {
+    }
+    #site-slideshow-tech_desc {
+      font-size: 33px;
+      font-weight: bold;
+    }
+    .large-bracket {
+      font-size: 4vw;
+    }
+    #sssd-wrapper {
+      height: 17%;
+    }
+    #site-slideshow-short_desc {
+      font-size: 24px;
+      letter-spacing: -1.1px;
+    }
+    #sswd-wrapper {
+      @include alignment-wrapper-1;
+      height: 27%
+    }
+    #site-slideshow-work_desc {
+      @include align-2;
+      color: $color-5;
+      line-height: 31px;
+    }
+    #sscui-wrapper {
+      height: 36%
+    }
+    #site-slideshow-code_url-icon {
+      font-size: 54px;
     }
   }
 }

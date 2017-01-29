@@ -6,39 +6,51 @@ and (min-width: $tablet-portrait-width) {
       height: 20%;
       h2 {
         @include align-3;
-        font-size: 14vw;
+        font-size: 9.5vh;
       }
     }
     #site-box {
-      height: 22%;
+      height: 30%;
+    }
+    #site-slideshow-next-button {
+      font-size: 8vh;
+    }
+    #site-slideshow-img_url {
+      width: 27vh;
+    }
+    #site-slideshow-prev-button {
+      font-size: 8vh;
     }
     #site-description {
-      height: 58%;
-      .fa-4x {
-        font-size: 4em;
-      }
-      .wrapper-2 {
-        height: 15%;
-      }
-      .wrapper-3 {
-        height: 14%;
-        #site-slideshow-short_desc {
-          font-size: 3.5vw;
-        }
-      }
-      .wrapper-4 {
-        height: 27%;
-        #site-slideshow-work_desc {
-          font-size: 3.2vw;
-          line-height: 5vw;
-        }
-      }
-      .wrapper-5 {
-        height: 44%;
-        #site-slideshow-code_url-icon {
-          @include align-2;
-        }
-      }
+      height: 50%;
+    }
+    #sstd-wrapper {
+    }
+    #site-slideshow-tech_desc {
+      font-size: 3.2vh;
+    }
+    #sssd-wrapper {
+      height: 19%;
+      width: 70%;
+    }
+    #site-slideshow-short_desc {
+      font-size: 2.5vh;
+    }
+    #sswd-wrapper {
+      height: 27%;
+      width: 65%;
+    }
+    #site-slideshow-work_desc {
+      font-size: 2.1vh;
+      line-height: 3.6vh;
+    }
+
+    #sscui-wrapper {
+      height: 44%;
+    }
+    #site-slideshow-code_url-icon {
+      @include align-2;
+
     }
   }
 }
