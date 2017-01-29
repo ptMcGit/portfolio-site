@@ -4,17 +4,22 @@ and (min-width: $tablet-portrait-width) {
   section#diversions {
     header {
       h2 {
-        font-size: 12vw;
+        font-size: 10vh;
       }
     }
-    .fa-5x {
-      font-size: 5em;
+    #vb-in-wrapper {
+      @include align-1;
+    }
+    #video-button {
+      font-size: 10.1vh;
+    }
+    #photo-button {
+      font-size: 10.1vh;
     }
   }
   footer#main-footer {
     p {
-      font-size: 2vw;
+      font-size: 1.8vh;
     }
   }
-
 }

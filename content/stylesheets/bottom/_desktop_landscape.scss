@@ -2,19 +2,23 @@
 and (orientation: landscape)
 and (min-width: $desktop-landscape-width) {
   section#diversions {
+    height: 562px;
     header {
       h2 {
-        font-size: 5vw;
+        font-size: 66px;
       }
     }
-    .fa-5x {
-      font-size: 5em;
+    #video-button {
+      font-size: 87px;
     }
-
+    #photo-button {
+      font-size: 87px;
+    }
   }
   footer#main-footer {
+    height: 162px;
     p {
-      font-size: 1em;
+      font-size: 14.9px;
     }
   }
 }

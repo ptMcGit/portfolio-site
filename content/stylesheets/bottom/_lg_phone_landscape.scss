@@ -2,17 +2,20 @@
 and (orientation: landscape)
 and (min-width: $lg-phone-landscape-width) {
   section#diversions {
-    .wrapper-1 {
+    #vb-out-wrapper {
       height: 41%;
     }
-    .wrapper-2 {
-      height: 36%;
-      .inner-wrapper {
-        @include align-2;
-      }
+    #video-button {
+      font-size: 18.9vh;
     }
-    .fa-5x {
-      font-size: 4em;
+    #pb-out-wrapper {
+      height: 36%;
+    }
+    #pb-in-wrapper {
+      @include align-2;
+    }
+    #photo-button {
+      font-size: 18.9vh;
     }
   }
 }

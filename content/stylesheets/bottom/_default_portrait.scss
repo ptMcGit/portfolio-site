@@ -2,27 +2,36 @@
 and (orientation: portrait) {
   section#diversions {
     header {
-      height: 18%;
+      height: 27%;
       h2 {
-        font-size: 15vw;
+        font-size: 11vh;
       }
     }
-    .wrapper-1 {
-      height: 40%;
+    h3 {
+      font-size: 3.5vh;
     }
-    .wrapper-2 {
-      height: 42%;
-      .inner-wrapper {
-        @include align-2;
-      }
+    #vb-out-wrapper {
+      height: 35%;
     }
-    .fa-5x {
-      font-size: 4em;
+    #vb-in-wrapper {
+      @include align-1;
+    }
+    #video-button {
+      font-size: 12.1vh;
+    }
+    #pb-out-wrapper {
+      height: 38%;
+    }
+    #pb-in-wrapper {
+      @include align-2;
+    }
+    #photo-button {
+      font-size: 12.1vh;
     }
   }
   footer#main-footer {
     p {
-      font-size: 4vw;
+      font-size: 2.4vh;
     }
   }
 }
