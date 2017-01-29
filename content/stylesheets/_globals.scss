@@ -12,7 +12,9 @@ $light-beige:       #f3eed8;
 
 /* tones */
 
+$bright-red:        red;
 $middle-red:        #c22121;
+$dark-red:          #7b1515;
 $mid-brown:         #A26E4E;
 $bright-yellow:     #fffb00;
 $beige:             #eadfb0;
@@ -33,6 +35,9 @@ $color-6:           $light-beige;
 $color-7:           $mid-brown;
 $color-8:           $dark-brown;
 $color-9:           $light-mid-gray-3;
+$color-10:          $bright-red;
+$color-11:          $dark-red;
+$color-12:          $light-gray;
 
 $background-1:      $dark-gray;
 $background-2:      $black;
@@ -41,7 +46,7 @@ $foreground-1:      $light-gray;
 
 $shade-1: $middle-red;
 $shade-2: #a40d0d;
-$shade-3: #7b1515;
+$shade-3: $dark-red;
 
 /* Sizes */
 
