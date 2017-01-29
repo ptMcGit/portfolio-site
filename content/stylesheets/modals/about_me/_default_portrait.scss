@@ -8,16 +8,13 @@ and (orientation: portrait) {
         margin-bottom: 5%;
       }
       .about-me-copy {
-        font-size: 5.5vw;
-        text-indent: 8vw;
-        line-height: 6.6vw;
+        font-size: 3.3vh;
+        text-indent: 6.3vh;
+        line-height: 4.4vh;
         padding-bottom: 6%;
-        &:first-of-type {
-          padding-top: 13%;
-        }
       }
       #about-me-modal-close {
-        font-size: 9vw;
+        font-size: 5.9vh;
       }
     }
   }
