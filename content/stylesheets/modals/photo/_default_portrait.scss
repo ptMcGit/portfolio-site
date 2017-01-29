@@ -2,18 +2,25 @@
 and (orientation: portrait) {
   section#diversions {
     #photo-modal-outside {
-      .fa-4x {
-        font-size: 2em;
-      }
       #photo-modal-close {
         height: 20%;
+        font-size: 7.5vh;
+        position: relative;
+        top: 5%;
+        right: 5%;
       }
       #photo-box {
         height: 60%;
       }
+      #photo-slideshow-prev-button {
+        font-size: 8vh;
+      }
+      #photo-slideshow-next-button {
+        font-size: 8vh;
+      }
       #flickr-link {
         height: 20%;
-        font-size: 6vw;
+        font-size: 1.6vh;
       }
       #photo {
         width: 100%;

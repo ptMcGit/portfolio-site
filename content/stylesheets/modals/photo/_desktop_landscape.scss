@@ -17,9 +17,15 @@ and (min-width: $desktop-landscape-width) {
       #photo-box {
         height: 550px;
       }
+      #photo-slideshow-prev-button {
+        font-size: 61px;
+      }
+      #photo-slideshow-next-button {
+        font-size: 61px;
+      }
       #flickr-link {
         height: 70px;
-        font-size: 16px;
+        font-size: 13.9px;
       }
     }
   }

@@ -7,11 +7,7 @@
         padding: 0;
         height: 100%;
         width: 90%;
-      }
-      #photo-modal-transparency {
-        background: black;
-        opacity: 0.8;
-        background-color: rgba(0,0,0,0.8);
+        text-align: center;
       }
       #photo-modal-close {
         height: 10%;
@@ -19,25 +15,27 @@
         text-align:right;
         float: initial;
         font-weight: bold;
+        color: $color-1;
+        position: relative;
+        top: 5%;
+        right: 5%;
       }
       #photo-box {
         height: 80%;
       }
-      #flickr-link {
-        height: 10%;
-        font-size: 1vw;
+      @mixin pss-button {
+        @include button_as_link;
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 13%;
+        font-size: 15vh;
       }
       #photo-slideshow-prev-button {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        width: 13%;
+        @include pss-button;
       }
       #photo-slideshow-next-button {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        width: 13%;
+        @include pss-button;
       }
       #photo-slideshow-url {
         display: inline-block;
@@ -45,6 +43,15 @@
         max-height: 98%;
         vertical-align: middle;
       }
+      #flickr-link {
+        height: 10%;
+        font-size: 2.1vh;
+      }
+    }
+    #photo-modal-transparency {
+      background: black;
+      opacity: 0.8;
+      background-color: rgba(0,0,0,0.8);
     }
   }
 }
