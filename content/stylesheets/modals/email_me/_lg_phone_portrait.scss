@@ -1,0 +1,11 @@
+@media screen
+and (orientation: landscape)
+and (min-width: $lg-phone-portrait-width) {
+  nav#main-nav {
+    #email-me-modal-outside {
+      a {
+        font-size: 3.1vh;
+      }
+    }
+  }
+}

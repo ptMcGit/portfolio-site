@@ -5,28 +5,24 @@
         font-family: $font-family-4;
         display: block;
         float: initial;
-        font-size: 7vw;
+        font-size: 4.6vh;
         font-weight: bold;
         text-align: right;
         color: $foreground-1;
-        position: fixed;
-        right: 10%;
-        border: 1px solid $foreground-1;
-        background: $background-1;
       }
       #email-me {
         width: 75%;
         margin-top: 36%;
         text-align: center;
-        font-size: 6vw;
-        p {
-          padding-top: 10%;
-        }
+        font-size: 3.6vh;
         a {
           display: block;
           padding-top: 4%;
-          font-size: 6vw;
+          font-size: 3.3vh
         }
+      }
+      #mailto {
+        font-weight: bold;
       }
     }
   }
