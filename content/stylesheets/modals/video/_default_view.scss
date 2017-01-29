@@ -5,8 +5,9 @@
         padding: 0;
         height: 100%;
         width: 90%;
+        text-align: center;
         background:$background-2;
-        border-color: $color-3;
+        border: initial;
       }
       #video-modal-close {
         color: $color-1;
@@ -17,55 +18,51 @@
         font-weight: bold;
         background: $background-2;
       }
+      #video-banner {
+        @include alignment-wrapper-1;
+        height: 13%;
+        width: 100%;
+        background: $color-3;
+      }
+      #video-slideshow-title {
+        @include align-1;
+        font-size: 8.5vh;
+        font-family: $font-family-1;
+        text-shadow: $text-shadow-1;
+      }
       #video-box {
         height: 75%;
         background: $background-2;
       }
-      #video-slideshow-title {
-        height: 7%;
-        font-size: 4vw;
-        font-family: $font-family-1;
+      @mixin vss-button {
+        @include button_as_link;
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 13%;
         text-shadow: $text-shadow-1;
-        background: $color-3;
-      }
-      #video-slideshow-description {
-        height: 5%;
-        font-size: 5vw;
-        display: none;
-        background: $background-2;
-      }
-      #youtube-link {
-        font-size: 1vw;
-        height: 10%;
-        background: $background-2;
-      }
-      #video-slideshow-tech-description {
-        height: 5%;
-        font-size: 5vw;
-        display: none;
         background: $background-2;
       }
       #video-slideshow-prev-button {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        width: 13%;
-        text-shadow: $text-shadow-1;
-        background: $background-2;
+        @include vss-button;
       }
       #video-slideshow-next-button {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        width: 13%;
-        text-shadow: $text-shadow-1;
-        background: $background-2;
+        @include vss-button;
       }
       #video-slideshow-iframe {
         display: inline-block;
         max-width: 71%;
         max-height: 98%;
         vertical-align: middle;
+        background: $background-2;
+      }
+      #video-slideshow-description {
+      }
+      #video-slideshow-tech-description {
+      }
+      #youtube-link {
+        font-size: 2.2vh;
+        height: 7%;
         background: $background-2;
       }
     }

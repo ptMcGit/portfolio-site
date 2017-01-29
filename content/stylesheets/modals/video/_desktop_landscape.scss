@@ -5,23 +5,30 @@ and (min-width: $desktop-landscape-width) {
     #video-modal-outside {
       #video {
         padding: 0;
-        height: 660px;
+        margin-top: 25px;
+        height: 611px;
         width: 900px;
+        border-top: 1px solid $light-mid-gray;
+        border-bottom: 4px solid $light-mid-gray;
       }
       #video-modal-close {
-        height: 40px;
+        height: 33px;
         display: block;
         text-align:right;
         float: initial;
-        font-size: 50px;
+        font-size: 36px;
         font-weight: bold;
       }
+      #video-banner {
+        height: 49px;
+        border-top: 2px solid $color-10;
+        border-bottom: 2px solid $color-11;
+      }
       #video-slideshow-title {
-        height: 40px;
         font-size: 40px;
       }
       #video-box {
-        height: 425px;
+        height: 352px;
       }
       #video-slideshow-prev-button {
         height: 100%;
@@ -33,21 +40,22 @@ and (min-width: $desktop-landscape-width) {
       }
       #video-slideshow-iframe {
         display: inline-block;
-        width: 700px;
-        height: 425px;
+        width: 640px;
+        height: 340px;
       }
       #video-slideshow-description {
         display: block;
-        font-size: 32px;
-        height: 64px;
-        width: 700px;
+        font-size: 28px;
+        height: 43px;
+        width: 809px;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 19px;
       }
       #video-slideshow-tech-description {
         display: block;
         height: 30px;
-        font-size: 24px;
+        font-size: 19px;
       }
       #youtube-link {
         font-size: 15px;

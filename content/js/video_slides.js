@@ -2,7 +2,7 @@ module.exports = (function(){
     var merry_medley={
         title:              "Merry Medley",
         url:                "https://www.youtube.com/embed/WHrfZEMJyG8?showinfo=0",
-        description:        "Mashup of videos edited to create new music from melodic and rhythmic elements.",
+        description:        "Music from a mashup of random videos.",
         tech_description:   "(Co-editor; FinalCut Pro, AfterEffects)"
     };
 
@@ -16,21 +16,21 @@ module.exports = (function(){
     var dolphin_promo = {
         title:              "Untitled Promotional",
         url:                "https://www.youtube.com/embed/u4oHrng4B3Y?showinfo=0",
-        description:        "Promotional for small music festival.",
+        description:        "Promotional for a local music festival.",
         tech_description:   "(AfterEffects, Photoshop, FinalCut Pro)"
     };
 
     var horologist = {
         title:              "The Adventures of Martin Dockery",
         url:                "https://www.youtube.com/embed/lYHrl3nDGAs?showinfo=0",
-        description:        "48-hour film festival adventure serial.",
+        description:        "48-hour Film Festival winner \u2014 adventure genre.",
         tech_description:   "(Editor, Chroma-key; FinalCut Pro, AfterEffects)"
     };
 
     var magic_8_ball = {
         title:              "Magic Eight Ball",
         url:                "https://www.youtube.com/embed/vuz1Wwy1d6A?showinfo=0",
-        description:        "A troubled writer explores his past.",
+        description:        "A troubled writer rediscovers his past.",
         tech_description:   "(Director of Photography, Camera Operator, Add'l post-production)"
     };
 

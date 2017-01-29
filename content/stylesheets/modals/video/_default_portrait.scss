@@ -7,10 +7,16 @@ and (orientation: portrait) {
       }
       #video-modal-close {
         height: 10%;
-        font-size: 11vw;
+        font-size: 7.2vh;
+      }
+      #video-banner {
+        @include alignment-wrapper-1;
+        height: 13%;
+        width: 100%;
+        background: $color-3;
       }
       #video-slideshow-title {
-        font-size: 7vw;
+        font-size: 5.6vh;
         height: 10%;
       }
       #video-box {
@@ -18,28 +24,34 @@ and (orientation: portrait) {
       }
       #video-slideshow-next-button {
         width: 11%;
+        font-size: 8.7vh;
       }
       #video-slideshow-prev-button {
         width: 11%;
+        font-size: 8.7vh;
       }
       #video-slideshow-description {
         display: block;
-        height: 10%;
+        height: 15%;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        background: $background-2;
+        font-size: 4vh;
+        line-height: 4.6vh;
       }
       #video-slideshow-tech-description {
         display: block;
         height: 7%;
-        font-size: 4.5vw;
+        font-size: 2.6vh;
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+        background: $background-2;
       }
       #youtube-link {
-        height: 23%;
-        font-size: 7vw;
+        height: 14%;
+        font-size: 4.4vh;
         text-shadow: $text-shadow-1;
       }
       #video {
