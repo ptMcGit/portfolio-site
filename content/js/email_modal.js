@@ -3,6 +3,5 @@
 (function() {
     var EasyModal = require('easymodal');
 
-    new EasyModal('#email-me','#email-button');
-
+    new EasyModal('#email-me', '#email-button');
 })();
