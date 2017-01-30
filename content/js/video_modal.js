@@ -1,8 +1,7 @@
 // Video modal
 
-(function(){
+(function() {
     var EasyModal = require('easymodal');
 
     new EasyModal('#video', '#video-button', true);
-
 })();
