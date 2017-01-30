@@ -30,10 +30,6 @@ compile '/img/**/*' do
   write item.identifier.to_s
 end
 
-compile '/font-awesome*/**/*' do
-  write item.identifier.to_s
-end
-
 compile '/**/*' do
   # do nothing
 end
