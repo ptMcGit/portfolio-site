@@ -7,4 +7,4 @@ $(document).on('scroll', function() {
         $('#top-link').show();
     else
         $('#top-link').hide();
-})
+});
