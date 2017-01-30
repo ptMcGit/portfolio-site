@@ -2,9 +2,9 @@
 and (orientation: landscape)
 and (min-width: $desktop-landscape-width) {
   header#main-header {
-    height: 30vh;
+    height: 170px;
     #mn-wrapper {
-      height: 202px;
+      height: 85%;
     }
     #my-name {
       font-size: 77px;
@@ -12,7 +12,7 @@ and (min-width: $desktop-landscape-width) {
     }
     #od-wrapper {
       @include alignment-wrapper-1;
-      height: 28px;
+      height: 15%;
     }
     #occupational-description {
       font-size: 15px;
@@ -22,12 +22,12 @@ and (min-width: $desktop-landscape-width) {
     }
   }
   nav#main-nav {
-    height: 70vh;
+    height: 500px;
     #nav-1 {
       font-size: 20px;
-      height: 146px;
-      width: 775px;
-      margin-top: -9px;
+      height: 27%;
+      width: 747px;
+      margin-bottom: 1%;
       #icon-buttons {
       }
       .button-and-text {
@@ -39,25 +39,38 @@ and (min-width: $desktop-landscape-width) {
     }
     #nav-2 {
       /* original calc on 662px i.e. this would be 284px */
-      height: 250px;
+      height: 63%;
       font-size: 37px;
       letter-spacing: 4.2px;
       .nav-2-item-wrapper {
         text-transform: none;
         /* does not add up to 100% */
         height: 20%;
+        width: auto;
       }
       #about-me-button {
         text-transform: none;
         height: 20%;
         background: none;
+        width: auto;
+        color: $color-2;
+        text-shadow: $text-shadow-1;
       }
       #sites-link {
         background: none;
+        color: $color-2;
+        text-shadow: $text-shadow-1;
       }
       #diversions-link {
         background: none;
+        color: $color-2;
+        text-shadow: $text-shadow-1;
       }
     }
   }
+  #top-stub {
+    height: calc(100vh - (480px + 170px));
+    background: $background-1;
+  }
+
 }

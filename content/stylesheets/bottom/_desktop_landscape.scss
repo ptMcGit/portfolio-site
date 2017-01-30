@@ -15,8 +15,12 @@ and (min-width: $desktop-landscape-width) {
       font-size: 87px;
     }
   }
+  #bottom-stub {
+    height: calc(100vh - (540px + 120px));
+    background: $background-1;
+  }
   footer#main-footer {
-    height: 162px;
+    height: 120px;
     p {
       font-size: 14.9px;
     }

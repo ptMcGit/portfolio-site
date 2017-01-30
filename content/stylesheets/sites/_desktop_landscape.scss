@@ -2,15 +2,16 @@
 and (orientation: landscape)
 and (min-width: $desktop-landscape-width) {
   section#sites {
+    height: 660px;
     header {
-      height: 102px;
+      height: 15%;
       h1 {
         @include align-3;
         font-size: 88px;
       }
     }
     #site-box {
-      height: 230px;
+      height: 35%;
       width: 421px;
     }
     #site-slideshow-prev-button {
@@ -25,7 +26,7 @@ and (min-width: $desktop-landscape-width) {
       font-size: 77px;
     }
     #site-description {
-      height: 330px;
+      height: 50%;
     }
     #sstd-backing {
       height: 20%;
@@ -61,5 +62,9 @@ and (min-width: $desktop-landscape-width) {
     #site-slideshow-code_url-icon {
       font-size: 54px;
     }
+  }
+  #sites-stub {
+    height: calc(100vh - 660px);
+    background: $color-1;
   }
 }
